@@ -41,10 +41,10 @@ const Team = () => {
   return (
     <Fragment>
       <div className="container mx-auto flex flex-col lg:h-[898px]">
-        <h1 className="text-stroke text-7xl lg:text-[215px] font-bold">
+        <h1 className="text-stroke text-7xl lg:text-[215px] font-bold ps-16">
           UMA - LAB
         </h1>
-        <h1 className="text-stroke text-7xl lg:text-[215px] font-bold text-end">
+        <h1 className="text-stroke text-7xl lg:text-[215px] font-bold text-end pe-16">
           TEAM
         </h1>
         <div className="flex justify-center mt-80">

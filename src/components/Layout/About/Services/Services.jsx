@@ -36,7 +36,7 @@ const Services = () => {
   return (
     <div className="container mx-auto flex flex-col h-[890px] lg:h-[768px]">
       <div className="w-full flex justify-end">
-        <h1 className="text-white text-end text-[32px] lg:text-[55px] font-bold max-w-[360px] lg:max-w-[633px] pb-32">
+        <h1 className="text-white text-end text-[32px] lg:text-[55px] font-bold max-w-[360px] lg:max-w-[633px] pb-32 pe-16">
           UMA це інструмент для успіху
         </h1>
       </div>
