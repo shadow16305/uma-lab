@@ -6,8 +6,6 @@ import { icons } from "../../../Tools/main-page-images";
 function Reasons() {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true });
-  const ref2 = useRef(null);
-  const inView2 = useInView(ref2, { once: true });
 
   const items = [
     {
