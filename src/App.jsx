@@ -1,5 +1,4 @@
 import { Fragment } from "react";
-
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Layout/Navbar";
 import Home from "./pages/Home";
@@ -13,10 +12,11 @@ function App() {
       <Navbar />
       <ScrollToTop />
       <Routes>
-        <Route path="/" />
-        <Route index element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
+        {/* Default route */}
+        <Route path="*" element={<Home />} />
       </Routes>
       <Footer />
     </Fragment>
