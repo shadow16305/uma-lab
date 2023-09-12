@@ -6,7 +6,7 @@ import hero_img from "../../../../assets/umalogo.png";
 function Hero() {
   useEffect(() => {
     const typewriter = new Typewriter(document.querySelector(".typewriter"), {
-      cursor: "█",
+      cursor: "|",
       autoStart: true,
     });
 

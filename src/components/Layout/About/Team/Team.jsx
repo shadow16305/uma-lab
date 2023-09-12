@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import { images } from "../../../Tools/about-page-images";
 import Card from "../../../UI/Card";
 
@@ -38,8 +39,8 @@ const items = [
 
 const Team = () => {
   return (
-    <div className="container mx-auto">
-      <div className="flex flex-col lg:h-[898px]">
+    <Fragment>
+      <div className="container mx-auto flex flex-col lg:h-[898px]">
         <h1 className="text-stroke text-7xl lg:text-[215px] font-bold">
           UMA - LAB
         </h1>
@@ -54,9 +55,9 @@ const Team = () => {
           </p>
         </div>
       </div>
-      <div className="h-[5000px] lg:h-[4200px] bg-[url('/src/assets/Background.png')] bg-cover bg-no-repeat">
+      <div className="bg-[url('/src/assets/mobile_bg.svg')] lg:bg-[url('/src/assets/Background.svg')] lg:bg-contain bg-no-repeat">
         {items.map((item) => (
-          <div className="py-72" key={item.id}>
+          <div className="container mx-auto py-72" key={item.id}>
             <Card
               image={item.img}
               text={item.text}
@@ -75,7 +76,7 @@ const Team = () => {
           надзвичайне.
         </p>
       </div>
-    </div>
+    </Fragment>
   );
 };
 

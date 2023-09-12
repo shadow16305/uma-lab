@@ -13,7 +13,7 @@ const Header = () => {
 
   useEffect(() => {
     const typewriter = new Typewriter(document.querySelector(".typewriter"), {
-      cursor: "█",
+      cursor: "|",
       autoStart: true,
     });
 
