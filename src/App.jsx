@@ -13,6 +13,8 @@ function App() {
       <Navbar />
       <ScrollToTop />
       <Routes>
+        <Route path="/" />
+        <Route index element={<Home />} />
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
       </Routes>
