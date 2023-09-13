@@ -2,7 +2,7 @@ import { Fragment, useState } from "react";
 
 import { Waypoint } from "react-waypoint";
 
-import { teamItems, teamItemsMobile } from "../../../Tools/text-database";
+import { teamItems, teamItemsMobile } from "../../../Tools/item-database";
 import Card from "../../../UI/Card";
 import CardMobile from "../../../UI/CardMobile";
 import dash from "../../../../assets/dash.svg";
@@ -38,7 +38,7 @@ const Team = () => {
           </div>
         </Waypoint>
       </div>
-      <div className="bg-[url('/src/assets/mobile_bg.svg')] lg:bg-[url('/src/assets/Background.svg')] lg:bg-contain bg-no-repeat">
+      <div className="bg-[url('/src/assets/darker01.png')]">
         {teamItems.map((item) => (
           <div
             className="container mx-auto py-72 hidden lg:block"

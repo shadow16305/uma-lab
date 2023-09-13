@@ -35,14 +35,14 @@ export const serviceItems = [
 
 export const reasonsItems = [
   {
-    id: "r1",
+    id: "r0",
     img: icons[0],
     title: "Покращення вашої присутності онлайн",
     paragraph:
       "допомогою професійного веб-дизайну та соціальних медіа, ми покращуємо вашу онлайн-присутність і залучаємо більше клієнтів",
   },
   {
-    id: "r2",
+    id: "r1",
     img: icons[5],
     title: "Адміністрування сайту та соціальних мереж",
     paragraph:
@@ -50,7 +50,7 @@ export const reasonsItems = [
   },
 
   {
-    id: "r3",
+    id: "r2",
     img: icons[2],
     title: "Підвищення свідомості про бренд",
     paragraph:
@@ -58,7 +58,7 @@ export const reasonsItems = [
   },
 
   {
-    id: "r4",
+    id: "r3",
     img: icons[1],
     title: "Цільовий трафік",
     paragraph:
@@ -66,14 +66,14 @@ export const reasonsItems = [
   },
 
   {
-    id: "r5",
+    id: "r4",
     img: icons[4],
     title: "Ефективна реклама",
     paragraph: "Таргетована реклама для досягнення максимальних результатів",
   },
 
   {
-    id: "r6",
+    id: "r5",
     img: icons[3],
     title: "Збільшення конверсії",
     paragraph:

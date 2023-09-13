@@ -3,7 +3,7 @@ import { useState } from "react";
 import Carousel from "../../../UI/Carousel";
 
 import { Waypoint } from "react-waypoint";
-import { serviceItems } from "../../../Tools/text-database";
+import { serviceItems } from "../../../Tools/item-database";
 
 const Services = () => {
   const [onScreen, setOnScreen] = useState(false);
@@ -28,7 +28,7 @@ const Services = () => {
         <div className="hidden lg:flex justify-center gap-16">
           {serviceItems.map((item) => (
             <div
-              className={`${getOpactity()} flex flex-col gap-4 transition-all duration-1000`}
+              className={`${getOpactity()} flex flex-col gap-6 transition-all duration-1000`}
               key={item.id}
             >
               <div className="flex">

@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import ReasonsGrid from "../../../UI/ReasonsGrid";
 import { useInView, motion } from "framer-motion";
-import { reasonsItems } from "../../../Tools/text-database";
+import { reasonsItems } from "../../../Tools/item-database";
 
 function Reasons() {
   const ref = useRef(null);

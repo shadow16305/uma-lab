@@ -4,10 +4,6 @@ import { Waypoint } from "react-waypoint";
 const Card = (props) => {
   const [onScreen, setOnScreen] = useState(false);
 
-  const getWidth = () => {
-    return onScreen ? "w-[300px] lg:w-[361px] h-[474px]" : "w-0 h-[474px]";
-  };
-
   const getOpactity = () => {
     return onScreen ? "opacity-100" : "opacity-0";
   };
@@ -28,7 +24,7 @@ const Card = (props) => {
       <div className="flex flex-col lg:flex-row justify-center gap-20 lg:gap-32 relative">
         <div className="w-[361px]">
           <div
-            className={`overflow-hidden transition-all duration-700 origin-left ${getWidth()}`}
+            className={`overflow-hidden transition-all duration-700 relative ${getPositionLeft()} ${getOpactity()}`}
           >
             <img
               src={props.image}
