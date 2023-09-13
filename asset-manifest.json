@@ -1,13 +1,17 @@
 {
   "files": {
-    "main.css": "/uma-lab/static/css/main.56e78b7b.css",
-    "main.js": "/uma-lab/static/js/main.f5fb12db.js",
+    "main.css": "/uma-lab/static/css/main.14f15d9d.css",
+    "main.js": "/uma-lab/static/js/main.858b221d.js",
     "static/js/787.101c7f98.chunk.js": "/uma-lab/static/js/787.101c7f98.chunk.js",
     "static/media/person-2.png": "/uma-lab/static/media/person-2.4c529aa0e1fe681971e3.png",
+    "static/media/person_2_mobile.png": "/uma-lab/static/media/person_2_mobile.611c3d978a688f67b8bc.png",
     "static/media/person-3.png": "/uma-lab/static/media/person-3.ab7adbed541b867e9986.png",
+    "static/media/person_3_mobile.png": "/uma-lab/static/media/person_3_mobile.72b5fd5ff83533293b82.png",
     "static/media/person-4.png": "/uma-lab/static/media/person-4.b858a5502e324a154a48.png",
+    "static/media/person_1_mobile.png": "/uma-lab/static/media/person_1_mobile.966cb1bfd736f1a89c57.png",
     "static/media/mobile_bg.svg": "/uma-lab/static/media/mobile_bg.e7d924361914db493b9f.svg",
     "static/media/person-1.png": "/uma-lab/static/media/person-1.5d713e78eddfe167a62b.png",
+    "static/media/person_4_mobile.png": "/uma-lab/static/media/person_4_mobile.a1acf1814e958170da75.png",
     "static/media/Background.svg": "/uma-lab/static/media/Background.2846c6c21d0a9b387b40.svg",
     "static/media/Ресурс 4.svg": "/uma-lab/static/media/Ресурс 4.5834d18520325749067e8d8d40f55b2e.svg",
     "static/media/facebook-icon.svg": "/uma-lab/static/media/facebook-icon.ceea381488d9b26689b612364b03f9c4.svg",
@@ -18,13 +22,13 @@
     "static/media/instagram-icon.svg": "/uma-lab/static/media/instagram-icon.93becf39809ceb00cabc700dd76dba92.svg",
     "static/media/Ресурс 6.svg": "/uma-lab/static/media/Ресурс 6.1bf8656e32a19ce545a18a03f1acb345.svg",
     "index.html": "/uma-lab/index.html",
-    "static/media/dash.svg": "/uma-lab/static/media/dash.5ff5680710071fc8373e3c84933648a2.svg",
-    "main.56e78b7b.css.map": "/uma-lab/static/css/main.56e78b7b.css.map",
-    "main.f5fb12db.js.map": "/uma-lab/static/js/main.f5fb12db.js.map",
+    "static/media/dash.svg": "/uma-lab/static/media/dash.16d6644e95b1046492befcbfd215bbbc.svg",
+    "main.14f15d9d.css.map": "/uma-lab/static/css/main.14f15d9d.css.map",
+    "main.858b221d.js.map": "/uma-lab/static/js/main.858b221d.js.map",
     "787.101c7f98.chunk.js.map": "/uma-lab/static/js/787.101c7f98.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.56e78b7b.css",
-    "static/js/main.f5fb12db.js"
+    "static/css/main.14f15d9d.css",
+    "static/js/main.858b221d.js"
   ]
 }
