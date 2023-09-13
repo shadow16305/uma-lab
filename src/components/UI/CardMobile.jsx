@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { Waypoint } from "react-waypoint";
 
-const Card = (props) => {
+const CardMobile = (props) => {
   const [onScreen, setOnScreen] = useState(false);
 
   const getWidth = () => {
-    return onScreen ? "w-[300px] lg:w-[361px] h-[474px]" : "w-0 h-[474px]";
+    return onScreen ? "w-[300px]  h-[474px]" : "w-0 h-[474px]";
   };
 
   const getOpactity = () => {
@@ -13,11 +13,11 @@ const Card = (props) => {
   };
 
   const getPositionRight = () => {
-    return onScreen ? "lg:right-0" : "lg:-right-[300px]";
+    return onScreen ? "left-0" : "-left-[200px]";
   };
 
   const getPositionLeft = () => {
-    return onScreen ? "left-0" : "-left-[300px]";
+    return onScreen ? "left-0" : "-left-[200px]";
   };
 
   return (
@@ -25,8 +25,8 @@ const Card = (props) => {
       onEnter={() => setOnScreen(true)}
       onLeave={() => setOnScreen(false)}
     >
-      <div className="flex flex-col lg:flex-row justify-center gap-20 lg:gap-32 relative">
-        <div className="w-[361px]">
+      <div className="flex flex-col justify-center items-center gap-20 lg:gap-32 relative">
+        <div className="w-[300px]">
           <div
             className={`overflow-hidden transition-all duration-700 origin-left ${getWidth()}`}
           >
@@ -65,4 +65,4 @@ const Card = (props) => {
   );
 };
 
-export default Card;
+export default CardMobile;
