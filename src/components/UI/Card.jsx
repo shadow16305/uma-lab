@@ -13,7 +13,7 @@ const Card = (props) => {
   };
 
   const getPositionLeft = () => {
-    return onScreen ? "left-0" : "-left-[300px]";
+    return onScreen ? "left-10" : "-left-[300px]";
   };
 
   return (
@@ -21,7 +21,7 @@ const Card = (props) => {
       onEnter={() => setOnScreen(true)}
       onLeave={() => setOnScreen(false)}
     >
-      <div className="flex flex-col lg:flex-row justify-center gap-20 lg:gap-32 relative">
+      <div className="flex flex-col lg:flex-row justify-center gap-20 lg:gap-32 relative px-10">
         <div className="w-[361px]">
           <div
             className={`overflow-hidden transition-all duration-700 relative ${getPositionLeft()} ${getOpactity()}`}
