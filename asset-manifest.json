@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/uma-lab/static/css/main.aac5c239.css",
+    "main.css": "/uma-lab/static/css/main.13dea5bc.css",
     "main.js": "/uma-lab/static/js/main.ea94f1c9.js",
     "static/js/787.101c7f98.chunk.js": "/uma-lab/static/js/787.101c7f98.chunk.js",
     "static/media/person-2.png": "/uma-lab/static/media/person-2.4c529aa0e1fe681971e3.png",
@@ -22,12 +22,12 @@
     "static/media/Ресурс 6.svg": "/uma-lab/static/media/Ресурс 6.1bf8656e32a19ce545a18a03f1acb345.svg",
     "index.html": "/uma-lab/index.html",
     "static/media/dash.svg": "/uma-lab/static/media/dash.16d6644e95b1046492befcbfd215bbbc.svg",
-    "main.aac5c239.css.map": "/uma-lab/static/css/main.aac5c239.css.map",
+    "main.13dea5bc.css.map": "/uma-lab/static/css/main.13dea5bc.css.map",
     "main.ea94f1c9.js.map": "/uma-lab/static/js/main.ea94f1c9.js.map",
     "787.101c7f98.chunk.js.map": "/uma-lab/static/js/787.101c7f98.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.aac5c239.css",
+    "static/css/main.13dea5bc.css",
     "static/js/main.ea94f1c9.js"
   ]
 }
