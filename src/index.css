@@ -31,6 +31,7 @@ body {
     1px 1px 0 white;
 }
 
+/* Link Hover Effect */
 @media screen and (min-width: 1000px) {
   .pseudo-text-effect {
     position: relative;
@@ -58,4 +59,24 @@ body {
   .pseudo-text-effect:hover::after {
     transform: translateY(0%);
   }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(156, 163, 175);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
