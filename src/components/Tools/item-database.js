@@ -150,3 +150,37 @@ export const teamItemsMobile = [
     lastName: "SYDORUK",
   },
 ];
+
+export const navLinks = [
+  {
+    id: "services",
+    name: "ПОСЛУГИ",
+    link: "#",
+    number: "01",
+  },
+
+  {
+    id: "clients",
+    name: "КЛІЄНТИ",
+    link: "#",
+    number: "04",
+  },
+  {
+    id: "blog",
+    name: "БЛОГ",
+    link: "#",
+    number: "02",
+  },
+  {
+    id: "about",
+    name: "ПРО НАС",
+    link: "/about",
+    number: "05",
+  },
+  {
+    id: "contact",
+    name: "КОНТАКТИ",
+    link: "#footer",
+    number: "03",
+  },
+];

@@ -19,7 +19,7 @@ const Header = () => {
 
     typewriter
       .changeDelay(20)
-      .typeString("відкрийте майбутнє вашого бізнесу")
+      .typeString("відкрийте майбутнє Вашого бізнесу")
       .start();
   }, []);
 

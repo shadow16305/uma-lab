@@ -1,97 +1,69 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
+import { navLinks } from "../Tools/item-database";
+
 import logo from "../../assets/umalogo.png";
-import hamburger from "../../assets/hamburger.png";
-import close from "../../assets/close.png";
 
 function Navbar() {
-  const [navbar, setNavbar] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const genericHamburgerLine = `h-1 w-8 my-1 bg-white transition ease transform duration-300`;
 
   return (
     <div>
-      <nav className="w-full bg-[#1a1a1a] bg-opacity-70 backdrop-blur-sm fixed top-0 left-0 right-0 z-10">
-        <div className="justify-between px-6 mx-auto md:items-center md:flex">
-          <div>
-            <div className="flex items-center justify-between py-3 md:py-5 md:block">
-              {/* LOGO */}
-              <Link to="/">
-                <img
-                  src={logo}
-                  className=""
-                  width={35}
-                  height={30}
-                  alt="logo"
-                />
+      <div
+        className={`flex justify-between items-center w-screen px-10 py-3 fixed top-0 z-30  ${
+          isOpen ? "bg-none" : "bg-[#1a1a1a]"
+        }`}
+      >
+        <h3>
+          <Link to="/" onClick={() => setIsOpen(false)}>
+            <img src={logo} className="w-[45px] h-[30px]" alt="" />
+          </Link>
+        </h3>
+        <button
+          className="flex flex-col h-12 w-12 justify-center items-center group"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          <div
+            className={`${genericHamburgerLine} ${
+              isOpen ? "rotate-45 translate-y-3" : ""
+            }`}
+          />
+          <div
+            className={`${genericHamburgerLine} ${isOpen ? "opacity-0" : ""}`}
+          />
+          <div
+            className={`${genericHamburgerLine} ${
+              isOpen ? "-rotate-45 -translate-y-3" : ""
+            }`}
+          />
+        </button>
+      </div>
+      <div
+        className={`${
+          isOpen
+            ? "top-0 h-screen w-screen"
+            : "top-[-1000px] lg:top-[-2000px] h-screen w-screen"
+        } transition-all duration-1000 fixed bg-[url('/src/assets/darker01.png')] bg-[#1a1a1a] z-20 py-32`}
+      >
+        <ul className="list-none uppercase gap-12 lg:gap-x-20 lg:gap-16 flex flex-col lg:flex-row lg:flex-wrap items-center lg:items-start lg:ps-10 lg:mx-auto lg:max-w-[1200px] lg:h-[479px]">
+          {navLinks.map((item) => (
+            <li key={item.id} className="flex item-center gap-5">
+              <span className="text-white">{item.number}</span>
+              <Link
+                to={item.link}
+                className="text-white text-[60px] lg:text-[90px] font-medium lg:w-[480px] pseudo-text-effect"
+                data-after={item.name}
+                onClick={() => setIsOpen(false)}
+              >
+                <span>{item.name}</span>
               </Link>
-              {/* HAMBURGER BUTTON FOR MOBILE */}
-              <div className="md:hidden">
-                <button
-                  className="p-2 text-gray-700 rounded-md outline-none"
-                  onClick={() => setNavbar(!navbar)}
-                >
-                  {navbar ? (
-                    <img
-                      src={close}
-                      className="invert"
-                      width={30}
-                      height={30}
-                      alt="logo"
-                    />
-                  ) : (
-                    <img
-                      src={hamburger}
-                      width={30}
-                      height={30}
-                      alt="logo"
-                      className="invert focus:border-none active:border-none"
-                    />
-                  )}
-                </button>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div
-              className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
-                navbar ? "p-12 md:p-0 block" : "hidden"
-              }`}
-            >
-              <ul className="h-screen md:h-auto items-center justify-center md:flex ">
-                <li className="pb-2 text-base text-white py-2 md:px-2 text-center border-b-2 md:border-b-0  hover:bg-sky-600  border-sky-600  md:hover:text-sky-600 md:hover:bg-transparent">
-                  <Link to="/about" onClick={() => setNavbar(!navbar)}>
-                    <p className="">Послуги</p>
-                  </Link>
-                </li>
-
-                <li className="pb-2 text-base hidden md:block text-white py-2 text-center border-b-2 md:border-b-0  hover:bg-sky-600 border-sky-600 md:hover:text-sky-600 md:hover:bg-transparent">
-                  <p className="text-sky-500">|</p>
-                </li>
-
-                <li className="pb-2 text-base justify-center md:justify-normal text-white py-2 px-2 text-center border-b-2 md:border-b-0  hover:bg-sky-600  border-sky-600  md:hover:text-sky-600 md:hover:bg-transparent">
-                  <Link to="#blog" onClick={() => setNavbar(!navbar)}>
-                    <p className="flex flex-row justify-center md:justify-normal">
-                      Клієнти
-                    </p>
-                  </Link>
-                </li>
-
-                <li className="pb-2 text-base text-white hidden md:block py-2 text-center  border-b-2 md:border-b-0  hover:bg-sky-600  border-sky-600  md:hover:text-sky-600 md:hover:bg-transparent">
-                  <p className="text-sky-500">|</p>
-                </li>
-
-                <li className="pb-2 text-base text-white py-2 px-2 text-center border-b-2 md:border-b-0  hover:bg-sky-600  border-sky-600 md:hover:text-sky-600 md:hover:bg-transparent">
-                  <a href="#footer" onClick={() => setNavbar(!navbar)}>
-                    <p className="flex flex-row justify-center md:justify-normal">
-                      Контакти
-                    </p>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </nav>
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 }
