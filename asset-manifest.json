@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/uma-lab/static/css/main.f6aafb95.css",
-    "main.js": "/uma-lab/static/js/main.147686ea.js",
+    "main.js": "/uma-lab/static/js/main.008d482a.js",
     "static/js/787.101c7f98.chunk.js": "/uma-lab/static/js/787.101c7f98.chunk.js",
     "static/media/person-2.png": "/uma-lab/static/media/person-2.4c529aa0e1fe681971e3.png",
     "static/media/person_2_mobile.png": "/uma-lab/static/media/person_2_mobile.611c3d978a688f67b8bc.png",
@@ -29,11 +29,11 @@
     "static/media/dash.svg": "/uma-lab/static/media/dash.16d6644e95b1046492befcbfd215bbbc.svg",
     "static/media/dash_mobile.svg": "/uma-lab/static/media/dash_mobile.10134d88938e9b8b8c184bcd761db52c.svg",
     "main.f6aafb95.css.map": "/uma-lab/static/css/main.f6aafb95.css.map",
-    "main.147686ea.js.map": "/uma-lab/static/js/main.147686ea.js.map",
+    "main.008d482a.js.map": "/uma-lab/static/js/main.008d482a.js.map",
     "787.101c7f98.chunk.js.map": "/uma-lab/static/js/787.101c7f98.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f6aafb95.css",
-    "static/js/main.147686ea.js"
+    "static/js/main.008d482a.js"
   ]
 }
