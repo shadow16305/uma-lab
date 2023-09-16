@@ -1,21 +1,24 @@
+import { Fragment, useState } from "react";
+
 import { useSpringCarousel } from "react-spring-carousel";
 
 const Carousel = () => {
-  const { carouselFragment } = useSpringCarousel({
+  const [activeItem, setActiveItem] = useState(0);
+
+  const counter = (
+    <span className="text-white text-lg font-bold">
+      {activeItem + 1}
+      <span className="text-white text-lg text-opacity-50"> / 03</span>
+    </span>
+  );
+
+  const { carouselFragment, useListenToCustomEvent } = useSpringCarousel({
     items: [
       {
-        id: "item-1",
+        id: 0,
         renderItem: (
           <div className="flex flex-col gap-4">
-            <div className="flex">
-              <span className="text-white text-lg font-bold">
-                01
-                <span className="text-white text-lg text-opacity-50">
-                  {" "}
-                  / 03
-                </span>
-              </span>
-            </div>
+            <div className="flex"></div>
             <h2 className="text-white text-[34px] font-bold">
               Дизайн та розробка
             </h2>
@@ -29,18 +32,9 @@ const Carousel = () => {
         ),
       },
       {
-        id: "item-2",
+        id: 1,
         renderItem: (
           <div className="flex flex-col gap-4">
-            <div className="flex">
-              <span className="text-white text-lg font-bold">
-                02
-                <span className="text-white text-lg text-opacity-50">
-                  {" "}
-                  / 03
-                </span>
-              </span>
-            </div>
             <h2 className="text-white text-[34px] font-bold">
               Інтернет-маркетинг
             </h2>
@@ -55,18 +49,9 @@ const Carousel = () => {
         ),
       },
       {
-        id: "item-3",
+        id: 2,
         renderItem: (
           <div className="flex flex-col gap-4">
-            <div className="flex">
-              <span className="text-white text-lg font-bold">
-                03
-                <span className="text-white text-lg text-opacity-50">
-                  {" "}
-                  / 03
-                </span>
-              </span>
-            </div>
             <h2 className="text-white text-[34px] font-bold">
               Менеджмент та підтримка
             </h2>
@@ -82,12 +67,24 @@ const Carousel = () => {
     ],
   });
 
+  useListenToCustomEvent((event) => {
+    if (event.eventName === "onSlideStartChange") {
+      setActiveItem(event.nextItem.id);
+    }
+  });
+
   return (
-    <div className="container mx-auto flex justify-center">
-      <div className="relative overflow-hidden max-w-[320px]">
-        {carouselFragment}
+    <Fragment>
+      <div className="flex items-center ps-[35px]">
+        <span className="text-white font-bold text-lg">0</span>
+        {counter}
       </div>
-    </div>
+      <div className="container mx-auto flex flex-col justify-center items-center">
+        <div className="relative overflow-hidden max-w-[320px]">
+          {carouselFragment}
+        </div>
+      </div>
+    </Fragment>
   );
 };
 

@@ -6,6 +6,7 @@ import { teamItems, teamItemsMobile } from "../../../Tools/item-database";
 import Card from "../../../UI/Card";
 import CardMobile from "../../../UI/CardMobile";
 import dash from "../../../../assets/dash.svg";
+import dash_mobile from "../../../../assets/dash_mobile.svg";
 
 const Team = () => {
   const [onScreen, setOnScreen] = useState(false);
@@ -16,9 +17,10 @@ const Team = () => {
 
   return (
     <Fragment>
-      <div className="container mx-auto flex flex-col lg:h-[898px]">
+      <div className="container mx-auto flex flex-col mt-44 lg:mt-0 lg:h-[898px]">
         <h1 className="text-stroke text-7xl lg:text-[215px] font-bold lg:ps-16 flex">
-          UMA <img src={dash} alt="" /> LAB
+          UMA <img src={dash} className="hidden lg:block" alt="" />{" "}
+          <img src={dash_mobile} className="lg:hidden" alt="" /> LAB
         </h1>
         <h1 className="text-stroke text-7xl lg:text-[215px] font-bold text-end lg:pe-16">
           TEAM
@@ -28,7 +30,7 @@ const Team = () => {
           onLeave={() => setOnScreen(false)}
         >
           <div
-            className={`flex justify-center mt-80 ${getOpactity()} transition-all duration-1000`}
+            className={`flex justify-center mt-44 ${getOpactity()} transition-all duration-1000`}
           >
             <p className="text-white text-lg lg:text-3xl text-center font-medium max-w-[1034px]">
               Ми — команда натхненних та відданих фахівців, талановитих
@@ -54,7 +56,7 @@ const Team = () => {
           </div>
         ))}
         {teamItemsMobile.map((item) => (
-          <div className="container mx-auto py-72 lg:hidden" key={item.id}>
+          <div className="container mx-auto py-36 lg:hidden" key={item.id}>
             <CardMobile
               image={item.img}
               text={item.text}

@@ -18,7 +18,7 @@ const ChatBubble = () => {
     }
   };
   return (
-    <div className="flex flex-col gap-y-5 items-center fixed bottom-24 md:bottom-16 left-[75%] sm:left-[85%] lg:left-[92%] w-16">
+    <div className="flex flex-col gap-y-5 items-center fixed bottom-24 md:bottom-16 left-[75%] sm:left-[85%] lg:left-[92%] w-16 z-0 lg:z-10">
       {showBubbles && (
         <>
           <motion.div
@@ -28,13 +28,15 @@ const ChatBubble = () => {
             transition={{ duration: 0.3 }}
             className="text-white bg-sky-600 hover:bg-sky-700 rounded-full p-4"
           >
-            <img
-              src={telegram}
-              width={35}
-              height={50}
-              alt="logo"
-              className="invert"
-            />
+            <a href="https://t.me/UMAlab">
+              <img
+                src={telegram}
+                width={35}
+                height={50}
+                alt="logo"
+                className="invert"
+              />
+            </a>
           </motion.div>
         </>
       )}

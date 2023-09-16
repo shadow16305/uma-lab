@@ -1,11 +1,12 @@
 import facebook_icon from "../../assets/facebook-icon.svg";
 import instagram_icon from "../../assets/instagram-icon.svg";
+import telegram_icon from "../../assets/tegram_icon.svg";
 
 const Footer = () => {
   return (
     <div className="w-full border-t bg-[#1a1a1a]">
       <div
-        className="flex bg-[#1a1a1a] justify-center flex-col lg:flex-row lg:gap-x-48 mx-auto w-11/12 z-2 mb-10 pt-5"
+        className="flex bg-[#1a1a1a] justify-center flex-col lg:flex-row lg:gap-x-48 mx-auto w-11/12 z-2 mb-10 pt-5 gap-y-12 lg:gap-y-0 relative z-10 lg:z-0"
         id="footer"
       >
         <div className="lg:w-1/2">
@@ -24,6 +25,7 @@ const Footer = () => {
             <div className="flex gap-x-2 justify-end md:justify-normal items-center">
               <a
                 target="_blank"
+                rel="noreferrer"
                 href="https://www.facebook.com/profile.php?id=100093691271416"
               >
                 <img
@@ -35,7 +37,11 @@ const Footer = () => {
                 />
               </a>
 
-              <a target="_blank" href="https://www.instagram.com/_uma_lab_/">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.instagram.com/_uma_lab_/"
+              >
                 <img
                   src={instagram_icon}
                   width={30}
@@ -43,6 +49,9 @@ const Footer = () => {
                   alt="logo"
                   className="invert"
                 />
+              </a>
+              <a target="_blank" rel="noreferrer" href="https://t.me/UMAlab">
+                <img src={telegram_icon} width={30} height={30} alt="logo" />
               </a>
             </div>
           </div>

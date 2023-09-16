@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 
 import { navLinks } from "../Tools/item-database";
 
@@ -12,13 +12,9 @@ function Navbar() {
 
   return (
     <div>
-      <div
-        className={`flex justify-between items-center w-screen px-10 py-3 fixed top-0 z-30  ${
-          isOpen ? "bg-none" : "bg-[#1a1a1a]"
-        }`}
-      >
+      <div className="flex justify-between items-center w-screen px-6 lg:px-10 py-3 fixed top-0 z-30 bg-none">
         <h3>
-          <Link to="/" onClick={() => setIsOpen(false)}>
+          <Link smooth to="/#hero" onClick={() => setIsOpen(false)}>
             <img src={logo} className="w-[45px] h-[30px]" alt="" />
           </Link>
         </h3>
@@ -46,13 +42,16 @@ function Navbar() {
           isOpen
             ? "top-0 h-screen w-screen"
             : "top-[-1000px] lg:top-[-2000px] h-screen w-screen"
-        } transition-all duration-1000 fixed bg-[url('/src/assets/darker01.png')] bg-[#1a1a1a] z-20 py-32`}
+        } transition-all duration-700 fixed bg-[url('/src/assets/darker01.png')] bg-[#1a1a1a] z-20 py-32`}
       >
         <ul className="list-none uppercase gap-12 lg:gap-x-20 lg:gap-16 flex flex-col lg:flex-row lg:flex-wrap items-center lg:items-start lg:ps-10 lg:mx-auto lg:max-w-[1200px] lg:h-[479px]">
           {navLinks.map((item) => (
             <li key={item.id} className="flex item-center gap-5">
-              <span className="text-white">{item.number}</span>
+              <span className="text-white hidden lg:block italic pt-6">
+                {item.number}
+              </span>
               <Link
+                smooth
                 to={item.link}
                 className="text-white text-[60px] lg:text-[90px] font-medium lg:w-[480px] pseudo-text-effect"
                 data-after={item.name}

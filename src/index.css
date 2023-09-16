@@ -26,6 +26,10 @@ body {
   color: rgb(var(--foreground-rgb));
 }
 
+p {
+  font-family: "Avenir Next", sans-serif;
+}
+
 .text-stroke {
   text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
     1px 1px 0 white;
@@ -79,4 +83,13 @@ body {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+li > span {
+  transition: 0.25s;
+}
+
+li:hover > span {
+  padding-top: 56px;
+  transition: 0.25s;
 }

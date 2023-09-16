@@ -19,7 +19,10 @@ function Hero() {
   }, []);
 
   return (
-    <div className="text-white bg-[#1a1a1a] justify-center items-center flex flex-col mt-44 md:mt-16 pb-52 md:gap-y-20">
+    <div
+      className="text-white bg-[#1a1a1a] justify-center items-center flex flex-col mt-44 md:mt-16 pb-52 md:gap-y-20"
+      id="hero"
+    >
       <div className="flex flex-col gap-y-5 text-center mt-9 md:mt-36">
         <img
           src={hero_img}

@@ -77,6 +77,7 @@ const Contact = () => {
               бізнесу
             </p>
             <button
+              id="contact"
               type="submit"
               className=" w-full lg:w-3/6 text-xl py-4 bg-sky-500 hover:bg-sky-900 transition-all duration-100 ease-in-out font-semibold lg:py-2 rounded-lg xl:rounded-full"
             >
