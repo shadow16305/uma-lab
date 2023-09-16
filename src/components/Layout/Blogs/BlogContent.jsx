@@ -2,7 +2,7 @@ import img from "../../../assets/image in blog.png";
 
 const BlogContent = () => {
   return (
-    <div className="flex flex-col items-center px-6 lg:px-0 lg:max-w-[684px] gap-6">
+    <div className="flex flex-col items-center lg:items-start px-6 lg:px-0 lg:max-w-[684px] gap-6">
       <p className="text-base font-medium">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
         minima provident cum dolor accusantium ut porro illum veritatis fugiat,

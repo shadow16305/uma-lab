@@ -2,23 +2,27 @@ const Contact = () => {
   return (
     <div className="flex">
       <div className="flex flex-col lg:flex-row lg:gap-x-48 mx-auto text-white w-11/12 z-2 py-10 mb-20">
-        <h1 className="text-4xl md:text-7xl font-bold text-center self-center w-full mb-5 lg:mb-0 lg:pl-20">
+        <h1 className="text-4xl md:text-7xl font-bold text-end self-center w-full mb-5 lg:mb-0 lg:pl-20">
           {"Зв’яжіться з нами зараз"}
         </h1>
 
-        <form className="w-full self-center">
+        <form
+          className="w-full self-center"
+          action="https://formsubmit.co/chris16305@gmail.com"
+          method="POST"
+        >
           <div className="mt-4 group  ">
             <label
               className="mb-6 flex flex-row text-gray-400 group-hover:text-white"
-              htmlFor="firstName"
+              htmlFor="Name"
             >
               <p className="text-sky-500">*</p> Ваше ім`я
             </label>
             <input
               className="w-full border-b border-gray-300 border-opacity-50 px-3 py-2 bg-transparent text-white focus:focus:outline-none focus:border-white"
               type="text"
-              id="firstName"
-              name="firstName"
+              id="Name"
+              name="Name"
               required
             />
           </div>
@@ -26,15 +30,15 @@ const Contact = () => {
           <div className="mt-4 group">
             <label
               className="mb-6 flex flex-row text-gray-400 group-hover:text-white"
-              htmlFor="lastName"
+              htmlFor="number"
             >
               <p className="text-sky-500">*</p>Ваш телефон
             </label>
             <input
               className="w-full border-b border-gray-300 border-opacity-50 px-3 py-2 bg-transparent text-white focus:focus:outline-none focus:border-white"
               type="text"
-              id="lastName"
-              name="lastName"
+              id="number"
+              name="number"
               required
             />
           </div>
@@ -64,9 +68,9 @@ const Contact = () => {
             </label>
             <input
               className="peer w-full border-b border-gray-300 border-opacity-50 px-3 py-2 bg-transparent text-white focus:focus:outline-none focus:border-white"
-              type="email"
-              id="email"
-              name="email"
+              type="text"
+              id="text"
+              name="text"
               required
             />
           </div>
