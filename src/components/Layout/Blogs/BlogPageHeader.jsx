@@ -3,7 +3,7 @@ import { blogPageHeaderitems } from "../../Tools/item-database";
 const BlogPageHeader = () => {
   return (
     <div className="bg-[url('/src/assets/blogBG.png')] bg-cover bg-fixed h-screen">
-      <div className="container mx-auto flex flex-col items-center justify-center gap-44 h-screen">
+      <div className="container mx-auto flex flex-col items-center justify-center gap-44 h-screen py-20">
         {blogPageHeaderitems.map((item) => (
           <div
             className="flex flex-col items-center lg:items-start gap-9"
