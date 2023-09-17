@@ -40,7 +40,7 @@ function Navbar() {
       <div
         className={`${
           isOpen
-            ? "top-0 h-screen w-screen"
+            ? "top-0 h-full w-screen"
             : "top-[-1000px] lg:top-[-2000px] h-screen w-screen"
         } transition-all duration-700 fixed bg-[url('/src/assets/darker01.png')] bg-[#1a1a1a] z-20 py-32`}
       >

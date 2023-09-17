@@ -14,13 +14,13 @@ const BlogSection = () => {
     <motion.div
       initial={{ opacity: 0 }}
       animate={inView ? { opacity: 1 } : { opacity: 0 }}
-      transition={{ duration: 2 }}
+      transition={{ duration: 1 }}
     >
       <div
         className="container mx-auto flex flex-col items-center justify-center gap-28 my-32"
         ref={ref}
       >
-        <div className="flex flex-col lg:flex-row justify-between items-center w-full px-[224px]">
+        <div className="flex flex-col lg:flex-row justify-between items-center w-full lg:px-[224px]">
           <h1 className="text-white font-bold text-[56px]">Блог</h1>
           <Link
             to="/blog"
