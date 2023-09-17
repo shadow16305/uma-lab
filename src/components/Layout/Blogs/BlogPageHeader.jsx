@@ -12,7 +12,7 @@ const BlogPageHeader = () => {
             <span className="text-white text-[10px] font-medium">
               {item.date}
             </span>
-            <h1 className="text-white text-[44px] font-medium lg:max-w-[660px] text-center lg:text-start">
+            <h1 className="text-white text-4xl lg:text-[44px] font-medium lg:max-w-[660px] text-center lg:text-start">
               {item.title}
             </h1>
           </div>
