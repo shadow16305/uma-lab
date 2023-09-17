@@ -17,10 +17,7 @@ const Card = (props) => {
   };
 
   return (
-    <Waypoint
-      onEnter={() => setOnScreen(true)}
-      onLeave={() => setOnScreen(false)}
-    >
+    <Waypoint onEnter={() => setOnScreen(true)}>
       <div className="flex flex-col lg:flex-row justify-center gap-20 lg:gap-32 relative px-10">
         <div className="w-[361px]">
           <div

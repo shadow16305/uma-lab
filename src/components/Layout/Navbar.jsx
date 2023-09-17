@@ -12,7 +12,11 @@ function Navbar() {
 
   return (
     <div>
-      <div className="flex justify-between items-center w-screen px-6 lg:px-10 py-3 fixed top-0 z-30 bg-none">
+      <div
+        className={`flex justify-between items-center w-screen px-6 lg:px-10 py-2 fixed top-0 z-30 ${
+          isOpen ? "bg-none" : "bg-[#1a1a1a]"
+        } `}
+      >
         <h3>
           <Link smooth to="/#hero" onClick={() => setIsOpen(false)}>
             <img src={logo} className="w-[45px] h-[30px]" alt="" />

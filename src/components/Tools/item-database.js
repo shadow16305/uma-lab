@@ -161,12 +161,17 @@ export const navLinks = [
     number: "01",
   },
   {
+    id: "contact",
+    name: "КОНТАКТИ",
+    link: "/#contact",
+    number: "04",
+  },
+  {
     id: "services",
     name: "ПОСЛУГИ",
     link: "/#offer",
     number: "02",
   },
-
   {
     id: "clients",
     name: "КЛІЄНТИ",
@@ -184,12 +189,6 @@ export const navLinks = [
     name: "ПРО НАС",
     link: "/about",
     number: "06",
-  },
-  {
-    id: "contact",
-    name: "КОНТАКТИ",
-    link: "/#contact",
-    number: "04",
   },
 ];
 

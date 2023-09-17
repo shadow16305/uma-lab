@@ -18,7 +18,7 @@ const ChatBubble = () => {
     }
   };
   return (
-    <div className="flex flex-col gap-y-5 items-center fixed bottom-24 md:bottom-16 left-[75%] sm:left-[85%] lg:left-[92%] w-16 z-0 lg:z-10">
+    <div className="flex flex-col gap-y-5 items-center sticky bottom-24 md:bottom-16 left-[75%] sm:left-[85%] lg:left-[92%] w-16 z-0 lg:z-10">
       {showBubbles && (
         <>
           <motion.div

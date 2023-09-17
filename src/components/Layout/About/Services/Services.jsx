@@ -21,10 +21,7 @@ const Services = () => {
           UMA це інструмент для успіху
         </h1>
       </div>
-      <Waypoint
-        onEnter={() => setOnScreen(true)}
-        onLeave={() => setOnScreen(false)}
-      >
+      <Waypoint onEnter={() => setOnScreen(true)}>
         <div className="hidden lg:flex justify-center gap-16">
           {serviceItems.map((item) => (
             <div

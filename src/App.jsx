@@ -13,13 +13,15 @@ function App() {
     <Fragment>
       <Navbar />
       <ScrollToTop />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/blog" element={<Blogs />} />
-        <Route path="/blogpage" element={<BlogPage />} />
-        <Route path="*" element={<Home />} />
-      </Routes>
+      <div className="mb-6">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/blog" element={<Blogs />} />
+          <Route path="/blogpage" element={<BlogPage />} />
+          <Route path="*" element={<Home />} />
+        </Routes>
+      </div>
       <Footer />
     </Fragment>
   );

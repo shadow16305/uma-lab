@@ -29,10 +29,7 @@ const Header = () => {
     <div
       className={`flex flex-col justify-center items-center h-[895px] lg:h-[800px]`}
     >
-      <Waypoint
-        onEnter={() => setOnScreen(true)}
-        onLeave={() => setOnScreen(false)}
-      >
+      <Waypoint onEnter={() => setOnScreen(true)}>
         <h1
           className={`text-stroke text-7xl lg:text-[215px] font-bold flex transition-all duration-[1.5s] ${getOpactity()}`}
         >

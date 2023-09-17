@@ -21,10 +21,7 @@ const CardMobile = (props) => {
   };
 
   return (
-    <Waypoint
-      onEnter={() => setOnScreen(true)}
-      onLeave={() => setOnScreen(false)}
-    >
+    <Waypoint onEnter={() => setOnScreen(true)}>
       <div className="flex flex-col justify-center items-center gap-20 lg:gap-32 relative">
         <div className="w-[300px]">
           <div
