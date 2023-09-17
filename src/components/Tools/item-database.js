@@ -155,35 +155,41 @@ export const teamItemsMobile = [
 
 export const navLinks = [
   {
+    id: "home",
+    name: "ГОЛОВНА",
+    link: "/",
+    number: "01",
+  },
+  {
     id: "services",
     name: "ПОСЛУГИ",
     link: "/#offer",
-    number: "01",
+    number: "02",
   },
 
   {
     id: "clients",
     name: "КЛІЄНТИ",
     link: "#",
-    number: "04",
+    number: "05",
   },
   {
     id: "blog",
     name: "БЛОГ",
     link: "/blog",
-    number: "02",
+    number: "03",
   },
   {
     id: "about",
     name: "ПРО НАС",
     link: "/about",
-    number: "05",
+    number: "06",
   },
   {
     id: "contact",
     name: "КОНТАКТИ",
     link: "/#contact",
-    number: "03",
+    number: "04",
   },
 ];
 
