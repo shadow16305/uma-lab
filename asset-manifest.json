@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/uma-lab/static/css/main.02c520a6.css",
-    "main.js": "/uma-lab/static/js/main.410f013a.js",
+    "main.css": "/uma-lab/static/css/main.8057a118.css",
+    "main.js": "/uma-lab/static/js/main.5ebe90d9.js",
     "static/js/787.101c7f98.chunk.js": "/uma-lab/static/js/787.101c7f98.chunk.js",
     "static/media/person-2.png": "/uma-lab/static/media/person-2.4c529aa0e1fe681971e3.png",
     "static/media/person_2_mobile.png": "/uma-lab/static/media/person_2_mobile.611c3d978a688f67b8bc.png",
@@ -28,12 +28,12 @@
     "static/media/Arrow 1.svg": "/uma-lab/static/media/Arrow 1.adc5770b22bd9a76e9bd07b080c798ec.svg",
     "static/media/dash.svg": "/uma-lab/static/media/dash.16d6644e95b1046492befcbfd215bbbc.svg",
     "static/media/dash_mobile.svg": "/uma-lab/static/media/dash_mobile.10134d88938e9b8b8c184bcd761db52c.svg",
-    "main.02c520a6.css.map": "/uma-lab/static/css/main.02c520a6.css.map",
-    "main.410f013a.js.map": "/uma-lab/static/js/main.410f013a.js.map",
+    "main.8057a118.css.map": "/uma-lab/static/css/main.8057a118.css.map",
+    "main.5ebe90d9.js.map": "/uma-lab/static/js/main.5ebe90d9.js.map",
     "787.101c7f98.chunk.js.map": "/uma-lab/static/js/787.101c7f98.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.02c520a6.css",
-    "static/js/main.410f013a.js"
+    "static/css/main.8057a118.css",
+    "static/js/main.5ebe90d9.js"
   ]
 }
