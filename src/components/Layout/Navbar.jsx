@@ -44,7 +44,7 @@ function Navbar() {
             : "top-[-1000px] lg:top-[-2000px] h-screen w-screen"
         } transition-all duration-700 fixed bg-[url('/src/assets/darker01.png')] bg-[#1a1a1a] z-20 py-32`}
       >
-        <ul className="list-none uppercase gap-12 lg:gap-x-20 lg:gap-16 flex flex-col lg:flex-row lg:flex-wrap items-center lg:items-start lg:ps-10 lg:mx-auto lg:max-w-[1200px] lg:h-[479px]">
+        <ul className="list-none uppercase gap-8 lg:gap-x-20 lg:gap-16 flex flex-col lg:flex-row lg:flex-wrap items-center lg:items-start lg:ps-10 lg:mx-auto lg:max-w-[1200px] lg:h-[479px]">
           {navLinks.map((item) => (
             <li key={item.id} className="flex item-center gap-5">
               <span className="text-white hidden lg:block italic pt-6">
