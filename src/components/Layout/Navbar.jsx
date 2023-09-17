@@ -53,7 +53,7 @@ function Navbar() {
               <Link
                 smooth
                 to={item.link}
-                className="text-white text-[60px] lg:text-[90px] font-medium lg:w-[500px] pseudo-text-effect"
+                className="text-white text-[40px] lg:text-[90px] font-medium lg:w-[500px] pseudo-text-effect"
                 data-after={item.name}
                 onClick={() => setIsOpen(false)}
               >
