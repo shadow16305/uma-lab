@@ -40,7 +40,7 @@ const Team = () => {
       <div className="bg-[url('/src/assets/darker01.png')] bg-fixed">
         {teamItems.map((item) => (
           <div
-            className="container mx-auto py-72 hidden lg:block"
+            className="container mx-auto py-52 hidden lg:block"
             key={item.id}
           >
             <Card
@@ -65,7 +65,7 @@ const Team = () => {
         ))}
       </div>
       <Waypoint onEnter={() => setOnScreen(true)}>
-        <div className="flex justify-center my-80">
+        <div className="flex justify-center my-44">
           <p
             className={`text-white text-lg lg:text-3xl text-center font-medium max-w-[1034px] ${getOpactity()} transition-all duration-1000`}
           >

@@ -27,7 +27,7 @@ const Header = () => {
 
   return (
     <div
-      className={`flex flex-col justify-center items-center h-[895px] lg:h-[800px]`}
+      className={`flex flex-col justify-center items-center h-screen lg:h-[800px]`}
     >
       <Waypoint onEnter={() => setOnScreen(true)}>
         <h1

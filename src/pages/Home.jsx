@@ -9,14 +9,14 @@ import BlogSection from "../components/Layout/Home/BlogSection/BlogSection";
 
 const Home = () => {
   return (
-    <Fragment>
+    <div className="bg-[#1a1a1a]">
       <Hero />
       <Offers />
       <Reasons />
       <BlogSection />
       <Contact />
       <ChatBubble />
-    </Fragment>
+    </div>
   );
 };
 
