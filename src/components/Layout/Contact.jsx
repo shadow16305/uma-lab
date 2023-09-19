@@ -8,7 +8,7 @@ const Contact = () => {
 
         <form
           className="w-full self-center"
-          action="https://fabform.io/f/5jWUAkl"
+          action="https://fabform.io/f/j1aw9Wp"
           method="post"
         >
           <div className="mt-4 group  ">
