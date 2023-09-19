@@ -8,8 +8,8 @@ const Contact = () => {
 
         <form
           className="w-full self-center"
-          action="https://formsubmit.co/chris16305@gmail.com"
-          method="POST"
+          action="https://fabform.io/f/5jWUAkl"
+          method="post"
         >
           <div className="mt-4 group  ">
             <label
