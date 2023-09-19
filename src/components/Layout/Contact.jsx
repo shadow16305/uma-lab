@@ -11,7 +11,7 @@ const Contact = () => {
           action="https://fabform.io/f/j1aw9Wp"
           method="post"
         >
-          <div className="mt-4 group  ">
+          <div className="mt-4 group">
             <label
               className="mb-6 flex flex-row text-gray-400 group-hover:text-white"
               htmlFor="Name"
