@@ -1,4 +1,5 @@
 import { useState } from "react";
+
 import Modal from "../UI/Modal";
 
 const Contact = () => {
@@ -25,8 +26,6 @@ const Contact = () => {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-
     const errors = {};
     if (!formData.name) {
       errors.name = "потрібне ім'я";
