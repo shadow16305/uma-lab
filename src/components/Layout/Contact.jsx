@@ -1,4 +1,50 @@
+import { useState } from "react";
+import Modal from "../UI/Modal";
+
 const Contact = () => {
+  const [showModal, setShowModal] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    number: "",
+    email: "",
+    text: "",
+  });
+  const [formErrors, setFormErrors] = useState({});
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+
+    setFormErrors({
+      ...formErrors,
+      [name]: "",
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const errors = {};
+    if (!formData.name) {
+      errors.name = "потрібне ім'я";
+    }
+    if (!formData.number) {
+      errors.number = "потрібен номер телефону";
+    }
+    if (!formData.email) {
+      errors.email = "потрібна електронна пошта";
+    }
+
+    if (Object.keys(errors).length > 0) {
+      setFormErrors(errors);
+      return;
+    }
+    setShowModal(true);
+  };
+
   return (
     <div className="flex">
       <div className="flex flex-col lg:flex-row lg:gap-x-48 mx-auto text-white w-11/12 z-2 py-10 mb-20">
@@ -10,68 +56,88 @@ const Contact = () => {
           className="w-full self-center"
           action="https://fabform.io/f/j1aw9Wp"
           method="post"
+          onSubmit={handleSubmit}
         >
           <div className="mt-4 group">
             <label
-              className="mb-6 flex flex-row text-gray-400 group-hover:text-white"
+              className="mb-6 flex flex-row gap-2 text-gray-400 group-hover:text-white"
               htmlFor="Name"
             >
               <p className="text-sky-500">*</p> Ваше ім`я
             </label>
             <input
-              className="w-full border-b border-gray-300 border-opacity-50 px-3 py-2 bg-transparent text-white focus:focus:outline-none focus:border-white"
+              className={`w-full border-b border-gray-300 border-opacity-50 px-3 py-2 bg-transparent text-white focus:focus:outline-none focus:border-white ${
+                formErrors.name ? "border-red-500" : ""
+              }`}
               type="text"
               id="Name"
-              name="Name"
-              required
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
             />
+            {formErrors.name && (
+              <p className="text-red-500 text-sm mt-2">{formErrors.name}</p>
+            )}
           </div>
 
           <div className="mt-4 group">
             <label
-              className="mb-6 flex flex-row text-gray-400 group-hover:text-white"
+              className="mb-6 flex flex-row gap-2 text-gray-400 group-hover:text-white"
               htmlFor="number"
             >
-              <p className="text-sky-500">*</p>Ваш телефон
+              <p className="text-sky-500">*</p> Ваш телефон
             </label>
             <input
-              className="w-full border-b border-gray-300 border-opacity-50 px-3 py-2 bg-transparent text-white focus:focus:outline-none focus:border-white"
+              className={`w-full border-b border-gray-300 border-opacity-50 px-3 py-2 bg-transparent text-white focus:focus:outline-none focus:border-white ${
+                formErrors.number ? "border-red-500" : ""
+              }`}
               type="text"
               id="number"
               name="number"
-              required
+              value={formData.number}
+              onChange={handleChange}
             />
+            {formErrors.number && (
+              <p className="text-red-500 text-sm mt-2">{formErrors.number}</p>
+            )}
           </div>
 
           <div className="mt-4 group">
             <label
-              className="mb-6 flex flex-row text-gray-400 group-hover:text-white"
+              className="mb-6 flex flex-row gap-2 text-gray-400 group-hover:text-white"
               htmlFor="email"
             >
-              <p className="text-sky-500">*</p>Ваш e-mail
+              <p className="text-sky-500">*</p> Ваш e-mail
             </label>
             <input
-              className="w-full border-b border-gray-300 border-opacity-50 px-3 py-2 bg-transparent text-white focus:focus:outline-none focus:border-white"
+              className={`w-full border-b border-gray-300 border-opacity-50 px-3 py-2 bg-transparent text-white focus:focus:outline-none focus:border-white ${
+                formErrors.email ? "border-red-500" : ""
+              }`}
               type="email"
               id="email"
               name="email"
-              required
+              value={formData.email}
+              onChange={handleChange}
             />
+            {formErrors.email && (
+              <p className="text-red-500 text-sm mt-2">{formErrors.email}</p>
+            )}
           </div>
 
           <div className="mt-4 group">
             <label
-              className="mb-6 flex flex-row text-gray-400 group-hover:text-white"
-              htmlFor="message"
+              className="mb-6 flex flex-row gap-2 text-gray-400 group-hover:text-white"
+              htmlFor="text"
             >
-              <p className="text-sky-500">*</p>Ваш коментар
+              <p className="text-sky-500">*</p> Ваш коментар
             </label>
             <input
-              className="peer w-full border-b border-gray-300 border-opacity-50 px-3 py-2 bg-transparent text-white focus:focus:outline-none focus:border-white"
+              className="w-full border-b border-gray-300 border-opacity-50 px-3 py-2 bg-transparent text-white focus:focus:outline-none focus:border-white"
               type="text"
               id="text"
               name="text"
-              required
+              value={formData.text}
+              onChange={handleChange}
             />
           </div>
 
@@ -89,6 +155,19 @@ const Contact = () => {
             </button>
           </div>
         </form>
+        <div
+          className={`${
+            showModal ? "opacity-100" : "opacity-0"
+          } transition duration-500 absolute`}
+        >
+          {showModal && <Modal onClick={() => setShowModal(false)} />}
+          {showModal && (
+            <div
+              className="bg-black bg-opacity-50 h-screen w-screen fixed left-0 top-0"
+              onClick={() => setShowModal(false)}
+            />
+          )}
+        </div>
       </div>
     </div>
   );
