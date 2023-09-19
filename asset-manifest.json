@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/uma-lab/static/css/main.e1c61138.css",
-    "main.js": "/uma-lab/static/js/main.43839519.js",
+    "main.css": "/uma-lab/static/css/main.469fdec6.css",
+    "main.js": "/uma-lab/static/js/main.cdf1f2c4.js",
     "static/js/787.101c7f98.chunk.js": "/uma-lab/static/js/787.101c7f98.chunk.js",
     "static/media/person-2.png": "/uma-lab/static/media/person-2.4c529aa0e1fe681971e3.png",
     "static/media/person_2_mobile.png": "/uma-lab/static/media/person_2_mobile.611c3d978a688f67b8bc.png",
@@ -25,15 +25,17 @@
     "static/media/Ресурс 6.svg": "/uma-lab/static/media/Ресурс 6.1bf8656e32a19ce545a18a03f1acb345.svg",
     "index.html": "/uma-lab/index.html",
     "static/media/tegram_icon.svg": "/uma-lab/static/media/tegram_icon.e77e3e515d850524b508efdfffc982cd.svg",
+    "static/media/modal_icon.svg": "/uma-lab/static/media/modal_icon.79bf16de87d1a063db91446cde6e7b80.svg",
+    "static/media/cross_modal_icon.svg": "/uma-lab/static/media/cross_modal_icon.dbcbfb769ebef9403f6996437f74925c.svg",
     "static/media/Arrow 1.svg": "/uma-lab/static/media/Arrow 1.adc5770b22bd9a76e9bd07b080c798ec.svg",
     "static/media/dash.svg": "/uma-lab/static/media/dash.16d6644e95b1046492befcbfd215bbbc.svg",
     "static/media/dash_mobile.svg": "/uma-lab/static/media/dash_mobile.10134d88938e9b8b8c184bcd761db52c.svg",
-    "main.e1c61138.css.map": "/uma-lab/static/css/main.e1c61138.css.map",
-    "main.43839519.js.map": "/uma-lab/static/js/main.43839519.js.map",
+    "main.469fdec6.css.map": "/uma-lab/static/css/main.469fdec6.css.map",
+    "main.cdf1f2c4.js.map": "/uma-lab/static/js/main.cdf1f2c4.js.map",
     "787.101c7f98.chunk.js.map": "/uma-lab/static/js/787.101c7f98.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e1c61138.css",
-    "static/js/main.43839519.js"
+    "static/css/main.469fdec6.css",
+    "static/js/main.cdf1f2c4.js"
   ]
 }
