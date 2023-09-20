@@ -7,6 +7,7 @@ import Blogs from "./pages/Blogs";
 import Footer from "./components/Layout/Footer";
 import ScrollToTop from "./components/UI/ScrollToTop";
 import BlogPage from "./pages/BlogPage";
+import Modal from "./components/UI/Modal";
 
 function App() {
   return (
@@ -20,6 +21,10 @@ function App() {
         <Route path="/blogpage" element={<BlogPage />} />
         <Route path="*" element={<Home />} />
       </Routes>
+      <Routes>
+        <Route path="/modal" element={<Modal />} />
+      </Routes>
+
       <Footer />
     </Fragment>
   );

@@ -1,9 +1,6 @@
 import { useState } from "react";
 
-import Modal from "../UI/Modal";
-
 const Contact = () => {
-  const [showModal, setShowModal] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     number: "",
@@ -38,10 +35,10 @@ const Contact = () => {
     }
 
     if (Object.keys(errors).length > 0) {
+      e.preventDefault();
       setFormErrors(errors);
       return;
     }
-    setShowModal(true);
   };
 
   return (
@@ -52,9 +49,9 @@ const Contact = () => {
         </h1>
 
         <form
-          className="w-full self-center"
           action="https://fabform.io/f/j1aw9Wp"
           method="post"
+          className="w-full self-center"
           onSubmit={handleSubmit}
         >
           <div className="mt-4 group">
@@ -148,25 +145,12 @@ const Contact = () => {
             <button
               id="contact"
               type="submit"
-              className=" w-full lg:w-3/6 text-xl py-4 bg-sky-500 hover:bg-sky-900 transition-all duration-200 ease-in-out font-semibold lg:py-2 rounded-lg xl:rounded-full"
+              className="w-full lg:w-3/6 flex justify-center items-center text-xl py-4 bg-sky-500 hover:bg-sky-900 transition-all duration-200 ease-in-out font-semibold lg:py-2 rounded-lg xl:rounded-full"
             >
               Подати заявку
             </button>
           </div>
         </form>
-        <div
-          className={`${
-            showModal ? "opacity-100" : "opacity-0"
-          } transition duration-500 absolute`}
-        >
-          {showModal && <Modal onClick={() => setShowModal(false)} />}
-          {showModal && (
-            <div
-              className="bg-black bg-opacity-50 h-screen w-screen fixed left-0 top-0"
-              onClick={() => setShowModal(false)}
-            />
-          )}
-        </div>
       </div>
     </div>
   );
