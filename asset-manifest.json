@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/uma-lab/static/css/main.7b38db6c.css",
-    "main.js": "/uma-lab/static/js/main.599e7454.js",
+    "main.css": "/uma-lab/static/css/main.9c673fcf.css",
+    "main.js": "/uma-lab/static/js/main.198d7930.js",
     "static/js/787.101c7f98.chunk.js": "/uma-lab/static/js/787.101c7f98.chunk.js",
+    "static/media/robe.png": "/uma-lab/static/media/robe.7bc391a6bae3491f7ad0.png",
     "static/media/client_two.png": "/uma-lab/static/media/client_two.0991125c8afdfbf4ade1.png",
-    "static/media/Client_one.png": "/uma-lab/static/media/Client_one.d92c23d2986ece69b4a2.png",
     "static/media/Clients.png": "/uma-lab/static/media/Clients.cf390e6b6b2cbca3c8f4.png",
     "static/media/person-2.png": "/uma-lab/static/media/person-2.4c529aa0e1fe681971e3.png",
     "static/media/person_2_mobile.png": "/uma-lab/static/media/person_2_mobile.611c3d978a688f67b8bc.png",
@@ -33,12 +33,12 @@
     "static/media/Arrow 1.svg": "/uma-lab/static/media/Arrow 1.adc5770b22bd9a76e9bd07b080c798ec.svg",
     "static/media/dash.svg": "/uma-lab/static/media/dash.16d6644e95b1046492befcbfd215bbbc.svg",
     "static/media/dash_mobile.svg": "/uma-lab/static/media/dash_mobile.10134d88938e9b8b8c184bcd761db52c.svg",
-    "main.7b38db6c.css.map": "/uma-lab/static/css/main.7b38db6c.css.map",
-    "main.599e7454.js.map": "/uma-lab/static/js/main.599e7454.js.map",
+    "main.9c673fcf.css.map": "/uma-lab/static/css/main.9c673fcf.css.map",
+    "main.198d7930.js.map": "/uma-lab/static/js/main.198d7930.js.map",
     "787.101c7f98.chunk.js.map": "/uma-lab/static/js/787.101c7f98.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7b38db6c.css",
-    "static/js/main.599e7454.js"
+    "static/css/main.9c673fcf.css",
+    "static/js/main.198d7930.js"
   ]
 }
