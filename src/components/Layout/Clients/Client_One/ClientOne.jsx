@@ -2,6 +2,8 @@ import { useState } from "react";
 
 import { Waypoint } from "react-waypoint";
 
+import robe from "../../../../assets/robe.png";
+
 const ClientOne = () => {
   const [onScreen, setOnScreen] = useState(false);
 
@@ -9,12 +11,23 @@ const ClientOne = () => {
     return onScreen ? "opacity-100" : "opacity-0";
   };
 
+  const getScale = () => {
+    return onScreen ? "scale-150" : "scale-100";
+  };
+
   return (
-    <div className="bg-[url('/src/assets/Client_one.png')] bg-cover bg-no-repeat h-screen w-screen">
-      <div className="container mx-auto flex justify-end items-center h-full">
+    <div className="bg-[#4F7769] h-screen w-screen">
+      <div className="container mx-auto flex justify-center items-center h-full">
+        <div className="h-screen overflow-hidden">
+          <img
+            src={robe}
+            className={`${getScale()} origin-top transition duration-1000 ease-in object-cover`}
+            alt=""
+          />
+        </div>
         <Waypoint onEnter={() => setOnScreen(true)}>
           <div
-            className={`flex flex-col pe-72 gap-7 ${getOpactity()} transition-all duration-[1.5s]`}
+            className={`flex flex-col gap-7 ${getOpactity()} transition-all duration-[1.5s]`}
           >
             <h2 className="text-stroke text-8xl font-medium text-[#4F7769]">
               BOVA
