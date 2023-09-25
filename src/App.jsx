@@ -4,10 +4,10 @@ import Navbar from "./components/Layout/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Blogs from "./pages/Blogs";
-import Footer from "./components/Layout/Footer";
 import ScrollToTop from "./components/UI/ScrollToTop";
 import BlogPage from "./pages/BlogPage";
 import Modal from "./components/UI/Modal";
+import Clients from "./pages/Clients";
 
 function App() {
   return (
@@ -19,13 +19,12 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/blog" element={<Blogs />} />
         <Route path="/blogpage" element={<BlogPage />} />
+        <Route path="/clients" element={<Clients />} />
         <Route path="*" element={<Home />} />
       </Routes>
       <Routes>
         <Route path="/modal" element={<Modal />} />
       </Routes>
-
-      <Footer />
     </Fragment>
   );
 }

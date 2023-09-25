@@ -1,18 +1,18 @@
-import { Fragment } from "react";
-
 import Header from "../components/Layout/About/Header/Header";
 import Services from "../components/Layout/About/Services/Services";
 import Team from "../components/Layout/About/Team/Team";
 import Contact from "../components/Layout/Contact";
+import Footer from "../components/Layout/Footer";
 
 const About = () => {
   return (
-    <Fragment>
+    <div className="h-screen overflow-auto">
       <Header />
       <Services />
       <Team />
       <Contact />
-    </Fragment>
+      <Footer />
+    </div>
   );
 };
 

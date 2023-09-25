@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+
 :root {
   --foreground-rgb: 26, 26, 26;
   --background-start-rgb: 26, 26, 26;
@@ -18,7 +20,7 @@
 
 body {
   background-color: #1a1a1a;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 body {

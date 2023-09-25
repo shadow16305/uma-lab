@@ -175,7 +175,7 @@ export const navLinks = [
   {
     id: "clients",
     name: "КЛІЄНТИ",
-    link: "#",
+    link: "/clients",
     number: "05",
   },
   {

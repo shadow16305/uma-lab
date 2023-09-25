@@ -1,11 +1,11 @@
-import { Fragment } from "react";
 import BlogPageHeader from "../components/Layout/Blogs/BlogPageHeader";
 import BlogContent from "../components/Layout/Blogs/BlogContent";
 import BlogNav from "../components/Layout/Blogs/BlogNav";
+import Footer from "../components/Layout/Footer";
 
 const BlogPage = () => {
   return (
-    <Fragment>
+    <div className="h-screen overflow-auto">
       <BlogPageHeader />
       <div className="bg-white">
         <div className="container mx-auto lg:flex lg:justify-center lg:gap-44 py-[74px]">
@@ -15,7 +15,8 @@ const BlogPage = () => {
           <BlogContent />
         </div>
       </div>
-    </Fragment>
+      <Footer />
+    </div>
   );
 };
 
