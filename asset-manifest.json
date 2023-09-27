@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/uma-lab/static/css/main.ac867d41.css",
-    "main.js": "/uma-lab/static/js/main.0ba46af4.js",
+    "main.css": "/uma-lab/static/css/main.c4099390.css",
+    "main.js": "/uma-lab/static/js/main.5ec80b5c.js",
     "static/js/787.101c7f98.chunk.js": "/uma-lab/static/js/787.101c7f98.chunk.js",
+    "static/media/diamonds_two.png": "/uma-lab/static/media/diamonds_two.fa3487457feec3b4318a.png",
     "static/media/diamonds.png": "/uma-lab/static/media/diamonds.922657428a12f23e1750.png",
     "static/media/robe.png": "/uma-lab/static/media/robe.6d9a8260d741328688eb.png",
     "static/media/Clients.png": "/uma-lab/static/media/Clients.cf390e6b6b2cbca3c8f4.png",
@@ -33,12 +34,12 @@
     "static/media/Arrow 1.svg": "/uma-lab/static/media/Arrow 1.adc5770b22bd9a76e9bd07b080c798ec.svg",
     "static/media/dash.svg": "/uma-lab/static/media/dash.16d6644e95b1046492befcbfd215bbbc.svg",
     "static/media/dash_mobile.svg": "/uma-lab/static/media/dash_mobile.10134d88938e9b8b8c184bcd761db52c.svg",
-    "main.ac867d41.css.map": "/uma-lab/static/css/main.ac867d41.css.map",
-    "main.0ba46af4.js.map": "/uma-lab/static/js/main.0ba46af4.js.map",
+    "main.c4099390.css.map": "/uma-lab/static/css/main.c4099390.css.map",
+    "main.5ec80b5c.js.map": "/uma-lab/static/js/main.5ec80b5c.js.map",
     "787.101c7f98.chunk.js.map": "/uma-lab/static/js/787.101c7f98.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ac867d41.css",
-    "static/js/main.0ba46af4.js"
+    "static/css/main.c4099390.css",
+    "static/js/main.5ec80b5c.js"
   ]
 }
