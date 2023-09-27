@@ -65,26 +65,25 @@ p {
   .pseudo-text-effect:hover::after {
     transform: translateY(0%);
   }
-}
 
-/* Scrollbar */
-::-webkit-scrollbar {
-  width: 10px;
-}
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: #1a1a1a;
-}
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #1a1a1a;
+  }
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: rgb(156, 163, 175);
-}
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(156, 163, 175);
+  }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
 }
 
 li > span {
