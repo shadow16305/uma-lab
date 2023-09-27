@@ -36,6 +36,10 @@ p {
   text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
     1px 1px 0 white;
 }
+.text-stroke-dark {
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+    1px 1px 0 black;
+}
 
 /* Link Hover Effect */
 @media screen and (min-width: 1000px) {

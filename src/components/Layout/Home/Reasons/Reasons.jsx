@@ -10,7 +10,7 @@ function Reasons() {
 
   return (
     <div className="flex flex-col gap-y-8 bg-[#1a1a1a] text-white mt-32">
-      <h1 className="text-center font-bold text-5xl py-10">
+      <h1 className="text-center font-bold text-4xl lg:text-5xl py-10">
         Цифровий успіх з UMA
       </h1>
       <ReasonsCarousel />
