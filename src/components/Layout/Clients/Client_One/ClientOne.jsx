@@ -17,17 +17,17 @@ const ClientOne = () => {
 
   return (
     <div className="bg-[#4F7769] h-screen w-screen">
-      <div className="container mx-auto flex flex-col lg:flex-row justify-center items-center h-full gap-20 lg:gap-0">
+      <div className="container mx-auto flex flex-col lg:flex-row justify-center items-center h-full gap-32">
         <div className="h-screen overflow-hidden">
           <img
             src={robe}
-            className={`${getScale()} origin-top transition duration-1000 ease-in object-cover`}
+            className={`${getScale()} origin-top transition duration-1000 ease-in object-cover w-[800px]`}
             alt=""
           />
         </div>
         <Waypoint onEnter={() => setOnScreen(true)}>
           <div
-            className={`flex flex-col items-center lg:items-start gap-7 ${getOpactity()} transition-all duration-[1.5s] pb-14 lg:pb-0`}
+            className={`flex flex-col items-center lg:items-start gap-7 ${getOpactity()} transition-all duration-[1.5s] pb-14 lg:pb-0 pe-14`}
           >
             <h2 className="text-stroke text-center lg:text-start text-8xl font-medium text-[#4F7769]">
               BOVA

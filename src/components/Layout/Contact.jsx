@@ -42,8 +42,8 @@ const Contact = () => {
   };
 
   return (
-    <div className="flex">
-      <div className="flex flex-col lg:flex-row lg:gap-x-48 mx-auto text-white w-11/12 z-2 py-10 mb-20">
+    <div className="flex" id="contact">
+      <div className="flex flex-col lg:flex-row lg:gap-x-48 mx-auto text-white w-11/12 z-2 py-12 mb-20">
         <h1 className="text-4xl md:text-7xl font-bold text-end self-center w-full mb-5 lg:mb-0 lg:pl-20">
           {"Зв’яжіться з нами зараз"}
         </h1>
@@ -143,7 +143,6 @@ const Contact = () => {
               бізнесу
             </p>
             <button
-              id="contact"
               type="submit"
               className="w-full lg:w-3/6 flex justify-center items-center text-xl py-4 bg-sky-500 hover:bg-sky-900 transition-all duration-200 ease-in-out font-semibold lg:py-2 rounded-lg xl:rounded-full"
             >

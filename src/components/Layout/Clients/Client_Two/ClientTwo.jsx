@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import { Waypoint } from "react-waypoint";
-import diamonds from "../../../../assets/dimonds.png";
+import diamonds from "../../../../assets/diamonds.png";
 
 const ClientThree = () => {
   const [onScreen, setOnScreen] = useState(false);
@@ -12,11 +12,15 @@ const ClientThree = () => {
 
   return (
     <div className="bg-[#BAC4CC] h-screen w-screen">
-      <div className="container mx-auto flex flex-col lg:flex-row justify-center items-center h-full">
-        <img src={diamonds} alt="" />
+      <div className="container mx-auto flex flex-col lg:flex-row justify-end items-center h-full relative">
+        <img
+          src={diamonds}
+          className="max-w-[800px] absolute left-24 z-0"
+          alt=""
+        />
         <Waypoint onEnter={() => setOnScreen(true)}>
           <div
-            className={`flex flex-col items-center lg:items-start gap-7 lg:pe-52 pt-52 ${getOpactity()} transition-all duration-[1.5s]`}
+            className={`flex flex-col items-center lg:items-start gap-7  pt-52 ${getOpactity()} transition-all duration-[1.5s] relative z-10 pe-32`}
           >
             <p className="text-black text-2xl font-['Inter'] max-w-[300px] lg:max-w-[383px] text-center lg:text-start">
               Створення фото та колажів для ювелірно-біжутерної компанії{" "}
