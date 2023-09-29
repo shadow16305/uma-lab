@@ -16,8 +16,6 @@ const Card = (props) => {
     return onScreen ? "left-10" : "-left-[300px]";
   };
 
-  setTimeout(() => {});
-
   return (
     <Waypoint onEnter={() => setOnScreen(true)}>
       <div className="flex flex-col lg:flex-row justify-center gap-20 lg:gap-32 relative px-10">

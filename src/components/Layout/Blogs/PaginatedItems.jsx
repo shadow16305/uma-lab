@@ -55,7 +55,7 @@ export default function PaginatedItems({ itemsPerPage }) {
         </div>
         <ReactPaginate
           breakLabel="..."
-          nextLabel={<img src={arrow} alt="navArrow" />}
+          nextLabel={<img src={arrow} className="invert" alt="navArrow" />}
           previousLabel=""
           onPageChange={handlePageClick}
           pageRangeDisplayed={5}

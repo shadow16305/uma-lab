@@ -19,7 +19,7 @@ function Reasons() {
           <motion.div
             initial={{ opacity: 0 }}
             animate={inView ? { opacity: 1 } : { opacity: 0 }}
-            transition={{ duration: 2 }}
+            transition={{ duration: 1 }}
             key={item.id}
           >
             <div className="flex-col gap-y-2 items-center text-center hidden lg:flex">
