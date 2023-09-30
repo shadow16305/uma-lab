@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/uma-lab/static/css/main.498c0e06.css",
-    "main.js": "/uma-lab/static/js/main.d0d5eaf9.js",
+    "main.css": "/uma-lab/static/css/main.c3fa827b.css",
+    "main.js": "/uma-lab/static/js/main.a294ca39.js",
     "static/js/787.101c7f98.chunk.js": "/uma-lab/static/js/787.101c7f98.chunk.js",
     "static/media/diamonds_two.png": "/uma-lab/static/media/diamonds_two.fa3487457feec3b4318a.png",
     "static/media/diamonds.png": "/uma-lab/static/media/diamonds.922657428a12f23e1750.png",
@@ -27,19 +27,18 @@
     "static/media/Ресурс 1.svg": "/uma-lab/static/media/Ресурс 1.aa4a6e98c515d7d44bdeba7a9d1dc727.svg",
     "static/media/instagram-icon.svg": "/uma-lab/static/media/instagram-icon.93becf39809ceb00cabc700dd76dba92.svg",
     "static/media/Ресурс 6.svg": "/uma-lab/static/media/Ресурс 6.1bf8656e32a19ce545a18a03f1acb345.svg",
-    "static/media/Arrow 1.svg": "/uma-lab/static/media/Arrow 1.9fdb8901a4eed03a55120a5f40a771f6.svg",
     "index.html": "/uma-lab/index.html",
     "static/media/tegram_icon.svg": "/uma-lab/static/media/tegram_icon.e77e3e515d850524b508efdfffc982cd.svg",
     "static/media/modal_icon.svg": "/uma-lab/static/media/modal_icon.79bf16de87d1a063db91446cde6e7b80.svg",
     "static/media/cross_modal_icon.svg": "/uma-lab/static/media/cross_modal_icon.dbcbfb769ebef9403f6996437f74925c.svg",
     "static/media/dash.svg": "/uma-lab/static/media/dash.16d6644e95b1046492befcbfd215bbbc.svg",
     "static/media/dash_mobile.svg": "/uma-lab/static/media/dash_mobile.10134d88938e9b8b8c184bcd761db52c.svg",
-    "main.498c0e06.css.map": "/uma-lab/static/css/main.498c0e06.css.map",
-    "main.d0d5eaf9.js.map": "/uma-lab/static/js/main.d0d5eaf9.js.map",
+    "main.c3fa827b.css.map": "/uma-lab/static/css/main.c3fa827b.css.map",
+    "main.a294ca39.js.map": "/uma-lab/static/js/main.a294ca39.js.map",
     "787.101c7f98.chunk.js.map": "/uma-lab/static/js/787.101c7f98.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.498c0e06.css",
-    "static/js/main.d0d5eaf9.js"
+    "static/css/main.c3fa827b.css",
+    "static/js/main.a294ca39.js"
   ]
 }
