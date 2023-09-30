@@ -31,7 +31,7 @@ const ClientThree = () => {
               Створення фото та колажів для ювелірно-біжутерної компанії{" "}
             </p>
             <p className="text-base text-black border border-black rounded-lg px-2 py-1 lg:max-w-[214px] text-center">
-              Сторення фотоконтенту
+              Створення фотоконтенту
             </p>
           </div>
         </Waypoint>

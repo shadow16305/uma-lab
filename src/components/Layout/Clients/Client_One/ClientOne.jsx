@@ -36,8 +36,8 @@ const ClientOne = () => {
               Створення фотоконтенту для дизайнерської лінійки халатів ручної
               роботи
             </p>
-            <p className="text-white text-base border rounded-lg px-2 py-1 max-w-[200px] lg:max-w-[214px] text-center">
-              Сторення фотоконтенту
+            <p className="text-white text-base border rounded-lg px-2 py-1 lg:max-w-[214px] text-center">
+              Створення фотоконтенту
             </p>
           </div>
         </Waypoint>

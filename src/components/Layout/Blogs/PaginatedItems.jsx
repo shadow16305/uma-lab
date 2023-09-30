@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import ReactPaginate from "react-paginate";
 import { blogPageItems } from "../../Tools/item-database";
 import BlogCard from "../../UI/BlogCard";
-import arrow from "../../../assets/Arrow 1.svg";
+import arrow from "../../../assets/arrow-point-to-right.png";
 
 // Example items, to simulate fetching from other resources.
 const items = blogPageItems;
@@ -55,7 +55,15 @@ export default function PaginatedItems({ itemsPerPage }) {
         </div>
         <ReactPaginate
           breakLabel="..."
-          nextLabel={<img src={arrow} className="invert" alt="navArrow" />}
+          nextLabel={
+            <img
+              src={arrow}
+              alt="next"
+              width={20}
+              height={20}
+              className="invert"
+            />
+          }
           previousLabel=""
           onPageChange={handlePageClick}
           pageRangeDisplayed={5}
