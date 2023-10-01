@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/uma-lab/static/css/main.c3fa827b.css",
-    "main.js": "/uma-lab/static/js/main.8570332a.js",
+    "main.css": "/uma-lab/static/css/main.eb3cb91f.css",
+    "main.js": "/uma-lab/static/js/main.fb9e894c.js",
     "static/js/787.101c7f98.chunk.js": "/uma-lab/static/js/787.101c7f98.chunk.js",
     "static/media/diamonds_two.png": "/uma-lab/static/media/diamonds_two.fa3487457feec3b4318a.png",
-    "static/media/diamonds.png": "/uma-lab/static/media/diamonds.922657428a12f23e1750.png",
+    "static/media/blob.png": "/uma-lab/static/media/blob.45c5f65fb3217942eadd.png",
+    "static/media/diamonds.png": "/uma-lab/static/media/diamonds.e22ab576aafa30884172.png",
     "static/media/robe.png": "/uma-lab/static/media/robe.6d9a8260d741328688eb.png",
     "static/media/Clients.png": "/uma-lab/static/media/Clients.cf390e6b6b2cbca3c8f4.png",
     "static/media/person-2.png": "/uma-lab/static/media/person-2.4c529aa0e1fe681971e3.png",
@@ -33,12 +34,12 @@
     "static/media/cross_modal_icon.svg": "/uma-lab/static/media/cross_modal_icon.dbcbfb769ebef9403f6996437f74925c.svg",
     "static/media/dash.svg": "/uma-lab/static/media/dash.16d6644e95b1046492befcbfd215bbbc.svg",
     "static/media/dash_mobile.svg": "/uma-lab/static/media/dash_mobile.10134d88938e9b8b8c184bcd761db52c.svg",
-    "main.c3fa827b.css.map": "/uma-lab/static/css/main.c3fa827b.css.map",
-    "main.8570332a.js.map": "/uma-lab/static/js/main.8570332a.js.map",
+    "main.eb3cb91f.css.map": "/uma-lab/static/css/main.eb3cb91f.css.map",
+    "main.fb9e894c.js.map": "/uma-lab/static/js/main.fb9e894c.js.map",
     "787.101c7f98.chunk.js.map": "/uma-lab/static/js/787.101c7f98.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c3fa827b.css",
-    "static/js/main.8570332a.js"
+    "static/css/main.eb3cb91f.css",
+    "static/js/main.fb9e894c.js"
   ]
 }
