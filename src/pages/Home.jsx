@@ -13,8 +13,8 @@ const Home = () => {
       <Offers />
       <Reasons />
       <BlogSection />
-      <Contact />
       <ChatBubble />
+      <Contact />
       <Footer />
     </div>
   );

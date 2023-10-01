@@ -42,7 +42,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="flex" id="contact">
+    <div className="flex relative z-10 lg:z-0 bg-[#1a1a1a]" id="contact">
       <div className="flex flex-col lg:flex-row lg:gap-x-48 mx-auto text-white w-11/12 z-2 py-12 mb-20">
         <h1 className="text-4xl md:text-7xl font-bold text-end self-center w-full mb-5 lg:mb-0 lg:pl-20">
           {"Зв’яжіться з нами зараз"}

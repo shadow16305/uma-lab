@@ -12,7 +12,7 @@ const ClientThree = () => {
   };
 
   return (
-    <div className="bg-[#d4deea] lg:h-screen w-screen">
+    <div className="bg-[#c2cdd3] lg:h-screen w-screen">
       <div className="container mx-auto flex flex-col-reverse lg:flex-row lg:justify-end justify-end items-center lg:h-full relative pt-10">
         <img
           src={diamonds}
@@ -22,10 +22,10 @@ const ClientThree = () => {
         <img src={diamonds_two} className="lg:hidden" alt="" />
         <Waypoint onEnter={() => setOnScreen(true)}>
           <div
-            className={`flex flex-col items-center lg:items-start gap-7 lg:pt-52 ${getOpactity()} transition-all duration-[1.5s] relative z-10 lg:pe-32 pt-24`}
+            className={`flex flex-col items-center lg:items-start gap-7 lg:pt-52 ${getOpactity()} transition-all duration-[1.5s] relative z-10 lg:pe-14 pt-24`}
           >
-            <h2 className="text-stroke-dark text-center lg:text-start text-8xl font-medium text-[#d4deea]">
-              BOVA
+            <h2 className="text-stroke-dark text-center lg:text-start text-7xl lg:text-8xl font-medium text-[#c2cdd3] uppercase">
+              Gemrays
             </h2>
             <p className="text-black text-2xl font-['Inter'] max-w-[300px] lg:max-w-[383px] text-center lg:text-start hidden lg:block">
               Створення фото та колажів для ювелірно-біжутерної компанії{" "}

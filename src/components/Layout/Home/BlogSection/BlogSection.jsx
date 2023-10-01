@@ -17,7 +17,7 @@ const BlogSection = () => {
       transition={{ duration: 1 }}
     >
       <div
-        className="container mx-auto flex flex-col items-center justify-center gap-28 my-32"
+        className="container mx-auto flex flex-col items-center justify-center gap-28 my-44"
         ref={ref}
       >
         <div className="flex flex-col lg:flex-row justify-between items-center w-full lg:px-[224px]">

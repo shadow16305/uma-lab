@@ -2,7 +2,7 @@ import { blogPageHeaderitems } from "../../Tools/item-database";
 
 const BlogPageHeader = () => {
   return (
-    <div className="bg-[url('/src/assets/blogBG.png')] bg-cover bg-fixed h-screen">
+    <div className="bg-[url('/src/assets/blogBG.png')] bg-cover lg:bg-fixed h-screen">
       <div className="container mx-auto flex flex-col items-center justify-center gap-20 lg:gap-44 h-screen py-60">
         {blogPageHeaderitems.map((item) => (
           <div
@@ -12,7 +12,7 @@ const BlogPageHeader = () => {
             <span className="text-white text-[10px] font-medium">
               {item.date}
             </span>
-            <h1 className="text-white text-4xl lg:text-[44px] font-medium lg:max-w-[660px] text-center lg:text-start leading-[50px]">
+            <h1 className="text-white text-4xl lg:text-[44px] font-medium max-w-[350px] lg:max-w-[660px] text-center lg:text-start leading-[50px]">
               {item.title}
             </h1>
           </div>

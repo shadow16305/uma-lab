@@ -27,9 +27,9 @@ const ClientOne = () => {
         </div>
         <Waypoint onEnter={() => setOnScreen(true)}>
           <div
-            className={`flex flex-col items-center lg:items-start gap-7 ${getOpactity()} transition-all duration-[1.5s] lg:pe-14 pt-28`}
+            className={`flex flex-col items-center lg:items-start gap-2 lg:gap-7 ${getOpactity()} transition-all duration-[1.5s] lg:pe-14 pt-28`}
           >
-            <h2 className="text-stroke text-center lg:text-start text-8xl font-medium text-[#4F7769]">
+            <h2 className="text-stroke text-center lg:text-start text-[80px] lg:text-8xl font-medium text-[#4F7769]">
               BOVA
             </h2>
             <p className="text-white text-center lg:text-start text-2xl font-light lg:max-w-[353px] font-['Inter'] opacity-70 hidden lg:block">
