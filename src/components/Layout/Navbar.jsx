@@ -19,7 +19,7 @@ function Navbar() {
       >
         <h3>
           <Link smooth to="/#hero" onClick={() => setIsOpen(false)}>
-            <img src={logo} className="w-[45px] h-[30px]" alt="" />
+            <img src={logo} className="w-[45px] h-[30px]" alt="Uma Lab" />
           </Link>
         </h3>
         <button

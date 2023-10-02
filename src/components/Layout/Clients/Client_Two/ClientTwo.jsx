@@ -17,9 +17,9 @@ const ClientThree = () => {
         <img
           src={diamonds}
           className="lg:max-w-[800px] lg:absolute lg:left-24 lg:z-0 hidden lg:block"
-          alt=""
+          alt="Diamonds Image"
         />
-        <img src={diamonds_two} className="lg:hidden" alt="" />
+        <img src={diamonds_two} className="lg:hidden" alt="Diamond Image" />
         <Waypoint onEnter={() => setOnScreen(true)}>
           <div
             className={`flex flex-col items-center lg:items-start gap-7 lg:pt-52 ${getOpactity()} transition-all duration-[1.5s] relative z-10 lg:pe-14 pt-24`}

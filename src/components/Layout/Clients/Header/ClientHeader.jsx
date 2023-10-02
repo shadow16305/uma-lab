@@ -18,7 +18,7 @@ const ClientHeader = () => {
           src={blob}
           className="lg:hidden absolute right-0"
           width={350}
-          alt=""
+          alt="Blob Image"
         />
         <div className="container mx-auto flex items-center justify-center lg:items-start h-full">
           <h1

@@ -11,12 +11,12 @@ const Modal = () => {
       <div className="border-[3px] border-white bg-[#1a1a1a] rounded-xl flex flex-col lg:w-[534px] lg:h-[481px]">
         <div className="flex justify-end pe-5 pt-5">
           <Link to="/">
-            <img src={cross_icon} alt="" />
+            <img src={cross_icon} alt="Cross Icon" />
           </Link>
         </div>
         <div className="flex flex-col items-center">
           <div className="flex justify-center pt-3">
-            <img src={check_icon} alt="" />
+            <img src={check_icon} alt="Check Icon" />
           </div>
           <h2 className="text-white text-[32px] font-semibold pt-3">
             Заявка відправлена
@@ -38,7 +38,7 @@ const Modal = () => {
                 src={facebook_icon}
                 width={30}
                 height={30}
-                alt="logo"
+                alt="facebook icon"
                 className="invert just"
               />
             </a>
@@ -52,12 +52,17 @@ const Modal = () => {
                 src={instagram_icon}
                 width={30}
                 height={30}
-                alt="logo"
+                alt="instagram icon"
                 className="invert"
               />
             </a>
             <a target="_blank" rel="noreferrer" href="https://t.me/UMAlab">
-              <img src={telegram_icon} width={30} height={30} alt="logo" />
+              <img
+                src={telegram_icon}
+                width={30}
+                height={30}
+                alt="telegram icon"
+              />
             </a>
           </div>
         </div>

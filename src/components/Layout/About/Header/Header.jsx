@@ -33,8 +33,8 @@ const Header = () => {
         <h1
           className={`text-stroke text-7xl lg:text-[215px] font-bold flex transition-all duration-[1.5s] ${getOpactity()}`}
         >
-          UMA <img src={dash} className="hidden lg:block" alt="" />{" "}
-          <img src={dash_mobile} className="lg:hidden" alt="" /> LAB
+          UMA <img src={dash} className="hidden lg:block" alt="dash" />{" "}
+          <img src={dash_mobile} className="lg:hidden" alt="dash" /> LAB
         </h1>
       </Waypoint>
       <p className="text-white text-xl lg:text-[41px] tracking-[0.615px] leading-normal typewriter"></p>

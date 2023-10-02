@@ -19,7 +19,7 @@ const BlogContent = () => {
       <img
         src={img}
         className="max-w-[340px] lg:max-w-[658px] max-h-[381px]"
-        alt=""
+        alt="Blog Image"
       />
       <p className="text-base font-medium">
         {" "}

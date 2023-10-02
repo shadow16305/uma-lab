@@ -19,8 +19,8 @@ const Team = () => {
     <Fragment>
       <div className="container mx-auto flex flex-col mt-44 lg:mt-0 lg:h-[898px]">
         <h1 className="text-stroke text-7xl lg:text-[215px] font-bold lg:ps-16 flex">
-          UMA <img src={dash} className="hidden lg:block" alt="" />{" "}
-          <img src={dash_mobile} className="lg:hidden" alt="" /> LAB
+          UMA <img src={dash} className="hidden lg:block" alt="dash" />{" "}
+          <img src={dash_mobile} className="lg:hidden" alt="dash" /> LAB
         </h1>
         <h1 className="text-stroke text-7xl lg:text-[215px] font-bold text-end lg:pe-16">
           TEAM

@@ -15,7 +15,11 @@ const ReasonsCarousel = () => {
           key={item.id}
         >
           <div className="h-[105px] w-[105]">
-            <img src={item.img} className="h-full object-contain" alt="" />
+            <img
+              src={item.img}
+              className="h-full object-contain"
+              alt="Reasons Icons"
+            />
           </div>
           <h2 className="text-white font-bold">{item.title}</h2>
           <p>{item.paragraph}</p>
