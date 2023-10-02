@@ -5,7 +5,7 @@ import chatBubble from "../../assets/bubble.png";
 import close from "../../assets/4.png";
 import telegram from "../../assets/2.png";
 
-const ChatBubble = () => {
+const ChatBubble = (props) => {
   const [showBubbles, setShowBubbles] = useState(false);
   const [bubbleImage, setBubbleImage] = useState(chatBubble);
 
@@ -18,7 +18,9 @@ const ChatBubble = () => {
     }
   };
   return (
-    <div className="flex flex-col gap-y-5 items-center absolute lg:sticky bottom-24 md:bottom-16 left-[75%] sm:left-[85%] lg:left-[92%] w-16 z-0 lg:z-10">
+    <div
+      className={`flex flex-col gap-y-5 items-center absolute lg:sticky bottom-24 md:bottom-16 left-[75%] sm:left-[85%] lg:left-[92%] w-16 z-0 lg:z-10 ${props.className}`}
+    >
       {showBubbles && (
         <>
           <motion.div

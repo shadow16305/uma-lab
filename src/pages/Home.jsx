@@ -13,8 +13,9 @@ const Home = () => {
       <Offers />
       <Reasons />
       <BlogSection />
-      <ChatBubble />
+      <ChatBubble className="lg:hidden" />
       <Contact />
+      <ChatBubble className="hidden lg:block" />
       <Footer />
     </div>
   );
