@@ -13,9 +13,9 @@ const Home = () => {
       <Offers />
       <Reasons />
       <BlogSection />
-      <ChatBubble className="lg:hidden" />
+      <ChatBubble className="md:hidden" />
       <Contact />
-      <ChatBubble className="hidden lg:block" />
+      <ChatBubble className="hidden md:block" />
       <Footer />
     </div>
   );

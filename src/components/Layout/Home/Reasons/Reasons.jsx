@@ -10,7 +10,7 @@ function Reasons() {
 
   return (
     <div className="flex flex-col gap-y-8 bg-[#1a1a1a] text-white mt-44">
-      <h1 className="text-center font-bold text-4xl lg:text-5xl py-10">
+      <h1 className="text-center font-bold text-4xl md:text-5xl py-10">
         Цифровий успіх з UMA
       </h1>
       <ReasonsCarousel />
@@ -22,7 +22,7 @@ function Reasons() {
             transition={{ duration: 1 }}
             key={item.id}
           >
-            <div className="flex-col gap-y-2 items-center text-center hidden lg:flex">
+            <div className="flex-col gap-y-2 items-center text-center hidden md:flex">
               <div className="h-[105px] w-[105] flex justify-center items-center">
                 <img
                   src={item.img}
@@ -30,7 +30,7 @@ function Reasons() {
                   className="mt-[-26px] py-2 h-full object-contain"
                 />
               </div>
-              <div className="xl:line-clamp-2 lg:w-3/4">
+              <div className="xl:line-clamp-2 md:w-3/4">
                 <h3 className="font-semibold text-lg">{item.title}</h3>
               </div>
               <p ref={ref} className="text-base text-gray-400">

@@ -240,7 +240,7 @@ export const navLinks = [
   {
     id: "home",
     name: "ГОЛОВНА",
-    link: "/",
+    link: "/#hero",
     number: "01",
   },
   {

@@ -24,24 +24,24 @@ const OffersText = (props) => {
       >
         <h1 className="font-semibold text-3xl basis-11/12">{props.title}</h1>
         <p className="basis-full text-base font-light text-gray-400">
-          <span className="lg:hidden">
+          <span className="md:hidden">
             {props.mobile_text} {""}
           </span>
-          <span className="hidden lg:block">{props.desktop_text}</span>
+          <span className="hidden md:block">{props.desktop_text}</span>
           {!showText[props.id] && (
             <button
               onClick={() => toggleShowText(props.id)}
-              className="underline lg:hidden"
+              className="underline md:hidden"
             >
               Читати більше...
             </button>
           )}
           {showText[props.id] && (
-            <span className="lg:hidden">
+            <span className="md:hidden">
               {props.full_mobile_text}{" "}
               <button
                 onClick={() => toggleShowText(props.id)}
-                className="underline lg:hidden"
+                className="underline md:hidden"
               >
                 Меньше...
               </button>

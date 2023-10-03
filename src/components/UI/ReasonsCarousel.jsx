@@ -35,7 +35,7 @@ const ReasonsCarousel = () => {
   });
 
   return (
-    <div className="container mx-auto flex flex-col items-center lg:hidden">
+    <div className="container mx-auto flex flex-col items-center md:hidden">
       <div className="relative overflow-hidden max-w-[320px]">
         {carouselFragment}
       </div>

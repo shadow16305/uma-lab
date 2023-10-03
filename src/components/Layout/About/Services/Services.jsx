@@ -13,16 +13,16 @@ const Services = () => {
   };
 
   return (
-    <div className="container mx-auto flex flex-col lg:h-[768px]">
+    <div className="container mx-auto flex flex-col md:h-[768px]">
       <div className="w-full flex justify-end">
         <h1
-          className={`text-white text-end text-[32px] lg:text-[55px] font-bold max-w-[360px] lg:max-w-[633px] pb-32 pe-6 lg:pe-16 ${getOpactity()} transition-all duration-1000`}
+          className={`text-white text-end text-[32px] md:text-[55px] font-bold max-w-[360px] md:max-w-[633px] pb-32 pe-6 md:pe-16 ${getOpactity()} transition-all duration-1000`}
         >
           UMA це інструмент для успіху
         </h1>
       </div>
       <Waypoint onEnter={() => setOnScreen(true)}>
-        <div className="hidden lg:flex justify-center gap-16">
+        <div className="hidden md:flex justify-center gap-16">
           {serviceItems.map((item) => (
             <div
               className={`${getOpactity()} flex flex-col gap-6 transition-all duration-1000`}
@@ -47,7 +47,7 @@ const Services = () => {
           ))}
         </div>
       </Waypoint>
-      <div className="lg:hidden">
+      <div className="md:hidden">
         <Carousel />
       </div>
     </div>

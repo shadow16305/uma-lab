@@ -8,8 +8,8 @@ const BlogPage = () => {
     <div className="h-screen overflow-auto">
       <BlogPageHeader />
       <div className="bg-white">
-        <div className="container mx-auto lg:flex lg:justify-center lg:gap-44 py-[74px]">
-          <div className="hidden lg:block">
+        <div className="container mx-auto md:flex md:justify-center md:gap-44 py-[74px]">
+          <div className="hidden md:block">
             <BlogNav />
           </div>
           <BlogContent />

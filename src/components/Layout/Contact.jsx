@@ -43,11 +43,11 @@ const Contact = () => {
 
   return (
     <div
-      className="flex relative z-10 lg:z-0 bg-[#1a1a1a] scroll-mt-8"
+      className="flex relative z-10 md:z-0 bg-[#1a1a1a] scroll-mt-8"
       id="contact"
     >
-      <div className="flex flex-col lg:flex-row lg:gap-x-48 mx-auto text-white w-11/12 z-2 py-12 mb-20">
-        <h1 className="text-4xl md:text-7xl font-bold text-end self-center w-full mb-5 lg:mb-0 lg:pl-20">
+      <div className="flex flex-col lg:flex-row md:gap-x-48 mx-auto text-white w-11/12 z-2 py-12 mb-20">
+        <h1 className="text-4xl md:text-7xl font-bold text-end self-center w-full mb-5 md:mb-0 md:pl-20">
           {"Зв’яжіться з нами зараз"}
         </h1>
 
@@ -140,14 +140,14 @@ const Contact = () => {
             />
           </div>
 
-          <div className="w-full flex flex-col lg:flex-row justify-end text-white mt-4 gap-y-8 lg:gap-x-10">
-            <p className="line-clamp-3 w-full lg:w-72 text-center lg:text-right">
+          <div className="w-full flex flex-col md:flex-row justify-end text-white mt-4 gap-y-8 md:gap-x-10">
+            <p className="line-clamp-3 w-full md:w-72 text-center md:text-right">
               Подайте заявку, щоб ми допомогли Вам отримати максимум від Вашого
               бізнесу
             </p>
             <button
               type="submit"
-              className="w-full lg:w-3/6 flex justify-center items-center text-xl py-4 bg-sky-500 hover:bg-sky-900 transition-all duration-200 ease-in-out font-semibold lg:py-2 rounded-lg xl:rounded-full"
+              className="w-full md:w-3/6 flex justify-center items-center text-xl py-4 bg-sky-500 hover:bg-sky-900 transition-all duration-200 ease-in-out font-semibold md:py-2 rounded-lg xl:rounded-full"
             >
               Подати заявку
             </button>

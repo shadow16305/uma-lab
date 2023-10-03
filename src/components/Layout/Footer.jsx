@@ -6,11 +6,11 @@ const Footer = () => {
   return (
     <footer className="w-full border-t bg-[#1a1a1a]">
       <div
-        className="flex bg-[#1a1a1a] justify-center flex-col lg:flex-row lg:gap-x-48 mx-auto w-11/12 py-10 pb-20 lg:pb-10 gap-y-12 lg:gap-y-0 relative z-10 lg:z-0"
+        className="flex bg-[#1a1a1a] justify-center flex-col md:flex-row md:gap-x-48 mx-auto w-11/12 py-10 pb-20 md:pb-10 gap-y-12 md:gap-y-0 relative z-10 md:z-0"
         id="footer"
       >
-        <div className="lg:w-1/2">
-          <h1 className="sm:text-4xl text-3xl md:text-6xl font-semibold text-center lg:text-start self-center text-stroke lg:ml-5">
+        <div className="md:w-1/2">
+          <h1 className="sm:text-4xl text-3xl md:text-6xl font-semibold text-center md:text-start self-center text-stroke md:ml-5">
             наші контакти
           </h1>
         </div>

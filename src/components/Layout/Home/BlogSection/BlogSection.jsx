@@ -20,7 +20,7 @@ const BlogSection = () => {
         className="container mx-auto flex flex-col items-center justify-center gap-28 my-44"
         ref={ref}
       >
-        <div className="flex flex-col lg:flex-row justify-between items-center w-full lg:px-[224px]">
+        <div className="flex flex-col md:flex-row justify-between items-center w-full md:px-[224px]">
           <h1 className="text-white font-bold text-[56px]">Блог</h1>
           <Link
             to="/blog"
@@ -29,7 +29,7 @@ const BlogSection = () => {
             ВСІ СТАТТІ
           </Link>
         </div>
-        <div className="flex flex-col lg:flex-row gap-4">
+        <div className="flex flex-col md:flex-row gap-4">
           {blogSectionItems.map((item) => (
             <BlogCard
               key={item.id}
