@@ -28,7 +28,7 @@ const Modal = () => {
           <h3 className="text-white text-xl font-semibold pt-11">
             Стежте за нами
           </h3>
-          <div className="flex gap-x-2 justify-end md:justify-normal items-center pt-7">
+          <div className="flex gap-x-2 justify-end md:justify-normal items-center pb-7 pt-7 lg:pb-0">
             <a
               target="_blank"
               rel="noreferrer"

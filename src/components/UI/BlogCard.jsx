@@ -10,7 +10,7 @@ const BlogCard = (props) => {
       >
         <img
           src={props.img}
-          alt="Blog Card Image"
+          alt="Blog Card"
           className="hover:scale-110 transition duration-500 cursor-pointer object-cover"
         />
       </Link>

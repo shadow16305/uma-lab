@@ -5,7 +5,7 @@ import OffersText from "../../../UI/OffersText";
 const Offers = () => {
   return (
     <div
-      className="flex flex-col lg:flex-row lg:gap-x-4 bg-[#1a1a1a] text-white px-4 md:px-10 lg:px-20 pt-2"
+      className="flex flex-col lg:flex-row lg:gap-x-4 bg-[#1a1a1a] text-white px-4 md:px-10 lg:px-20 pt-2 scroll-mt-16"
       id="offer"
     >
       <div className="lg:w-1/2 relative mb-12 text-center lg:mb-0 lg:text-start">

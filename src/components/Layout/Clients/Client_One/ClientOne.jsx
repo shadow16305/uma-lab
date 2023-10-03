@@ -22,7 +22,7 @@ const ClientOne = () => {
           <img
             src={robe}
             className={`${getScale()} origin-top transition duration-1000 ease-in lg:object-cover lg:w-[800px]`}
-            alt="Robe Image"
+            alt="Robe"
           />
         </div>
         <Waypoint onEnter={() => setOnScreen(true)}>

@@ -19,7 +19,7 @@ const ChatBubble = (props) => {
   };
   return (
     <div
-      className={`flex flex-col gap-y-5 items-center absolute lg:sticky bottom-24 md:bottom-16 left-[75%] sm:left-[85%] lg:left-[92%] w-16 z-0 lg:z-10 ${props.className}`}
+      className={`flex flex-col gap-y-5 items-center absolute lg:sticky bottom-10 md:bottom-16 left-[75%] sm:left-[85%] lg:left-[92%] w-16 z-0 lg:z-10 ${props.className}`}
     >
       {showBubbles && (
         <>
