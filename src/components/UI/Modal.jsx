@@ -3,16 +3,15 @@ import check_icon from "../../assets/modal_icon.svg";
 import facebook_icon from "../../assets/facebook-icon.svg";
 import instagram_icon from "../../assets/instagram-icon.svg";
 import telegram_icon from "../../assets/tegram_icon.svg";
-import { Link } from "react-router-dom";
 
-const Modal = () => {
+const Modal = (props) => {
   return (
     <div className="fixed top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] z-20 h-screen w-screen flex justify-center items-center bg-[#1a1a1a]">
       <div className="border-[3px] border-white bg-[#1a1a1a] rounded-xl flex flex-col md:w-[534px] md:h-[481px]">
         <div className="flex justify-end pe-5 pt-5">
-          <Link to="/">
+          <button onClick={props.onClick}>
             <img src={cross_icon} alt="Cross Icon" />
-          </Link>
+          </button>
         </div>
         <div className="flex flex-col items-center">
           <div className="flex justify-center pt-3">

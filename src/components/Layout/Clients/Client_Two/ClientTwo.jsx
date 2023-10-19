@@ -16,7 +16,7 @@ const ClientThree = () => {
       <div className="container mx-auto flex flex-col-reverse md:flex-row md:justify-end justify-end items-center md:h-full relative pt-10">
         <img
           src={diamonds}
-          className="md:max-w-[800px] md:absolute md:left-24 md:z-0 hidden md:block"
+          className="md:max-w-[400px] lg:max-w-[800px] md:absolute lg:left-0 md:z-0 hidden md:block"
           alt="Diamonds"
         />
         <img src={diamonds_two} className="md:hidden" alt="Diamond" />

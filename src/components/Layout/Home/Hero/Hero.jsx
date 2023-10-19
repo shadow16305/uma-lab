@@ -20,7 +20,7 @@ function Hero() {
 
   return (
     <div
-      className="text-white bg-[#1a1a1a] justify-center items-center flex flex-col mt-24 md:mt-16 pb-60 md:gap-y-20 scroll-mt-16"
+      className="text-white bg-[#1a1a1a] justify-center items-center flex flex-col mt-24 md:mt-16 pb-60 lg:pb-40 md:gap-y-20 scroll-mt-16"
       id="hero"
     >
       <div className="flex flex-col gap-y-5 text-center mt-9 md:mt-36">

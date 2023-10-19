@@ -1,13 +1,21 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
+
+import emailjs from "@emailjs/browser";
+import Modal from "../UI/Modal";
 
 const Contact = () => {
+  const form = useRef();
+
   const [formData, setFormData] = useState({
-    name: "",
-    number: "",
-    email: "",
-    text: "",
+    user_name: "",
+    user_number: "",
+    user_email: "",
+    message: "",
   });
+
   const [formErrors, setFormErrors] = useState({});
+
+  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -23,40 +31,52 @@ const Contact = () => {
   };
 
   const handleSubmit = (e) => {
+    e.preventDefault();
+
     const errors = {};
-    if (!formData.name) {
+    if (!formData.user_name) {
       errors.name = "потрібне ім'я";
     }
-    if (!formData.number) {
+    if (!formData.user_number) {
       errors.number = "потрібен номер телефону";
     }
-    if (!formData.email) {
+    if (!formData.user_email) {
       errors.email = "потрібна електронна пошта";
     }
 
     if (Object.keys(errors).length > 0) {
-      e.preventDefault();
       setFormErrors(errors);
       return;
     }
+
+    emailjs
+      .sendForm(
+        "service_i9bvn1n",
+        "template_1q5j959",
+        form.current,
+        "a7QAOThs89VSf4k6Q"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setIsFormSubmitted(true);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
 
   return (
     <div
-      className="flex relative z-10 md:z-0 bg-[#1a1a1a] scroll-mt-8"
+      className="flex relative z-10 md:z-0 bg-[#1a1a1a] scroll-mt-8 lg:scroll-mt-20"
       id="contact"
     >
       <div className="flex flex-col lg:flex-row md:gap-x-48 mx-auto text-white w-11/12 z-2 py-12 mb-20">
         <h1 className="text-4xl md:text-7xl font-bold text-end self-center w-full mb-5 md:mb-0 md:pl-20">
           {"Зв’яжіться з нами зараз"}
         </h1>
-
-        <form
-          action="https://fabform.io/f/j1aw9Wp"
-          method="post"
-          className="w-full self-center"
-          onSubmit={handleSubmit}
-        >
+        <form ref={form} className="w-full self-center" onSubmit={handleSubmit}>
           <div className="mt-4 group">
             <label
               className="mb-6 flex flex-row gap-2 text-gray-400 group-hover:text-white"
@@ -70,7 +90,7 @@ const Contact = () => {
               }`}
               type="text"
               id="Name"
-              name="name"
+              name="user_name"
               value={formData.name}
               onChange={handleChange}
             />
@@ -78,7 +98,6 @@ const Contact = () => {
               <p className="text-red-500 text-sm mt-2">{formErrors.name}</p>
             )}
           </div>
-
           <div className="mt-4 group">
             <label
               className="mb-6 flex flex-row gap-2 text-gray-400 group-hover:text-white"
@@ -92,7 +111,7 @@ const Contact = () => {
               }`}
               type="text"
               id="number"
-              name="number"
+              name="user_number"
               value={formData.number}
               onChange={handleChange}
             />
@@ -100,7 +119,6 @@ const Contact = () => {
               <p className="text-red-500 text-sm mt-2">{formErrors.number}</p>
             )}
           </div>
-
           <div className="mt-4 group">
             <label
               className="mb-6 flex flex-row gap-2 text-gray-400 group-hover:text-white"
@@ -114,7 +132,7 @@ const Contact = () => {
               }`}
               type="email"
               id="email"
-              name="email"
+              name="user_email"
               value={formData.email}
               onChange={handleChange}
             />
@@ -122,7 +140,6 @@ const Contact = () => {
               <p className="text-red-500 text-sm mt-2">{formErrors.email}</p>
             )}
           </div>
-
           <div className="mt-4 group">
             <label
               className="mb-6 flex flex-row gap-2 text-gray-400 group-hover:text-white"
@@ -134,12 +151,11 @@ const Contact = () => {
               className="w-full border-b border-gray-300 border-opacity-50 px-3 py-2 bg-transparent text-white focus:focus:outline-none focus:border-white"
               type="text"
               id="text"
-              name="text"
+              name="message"
               value={formData.text}
               onChange={handleChange}
             />
           </div>
-
           <div className="w-full flex flex-col md:flex-row justify-end text-white mt-4 gap-y-8 md:gap-x-10">
             <p className="line-clamp-3 w-full md:w-72 text-center md:text-right">
               Подайте заявку, щоб ми допомогли Вам отримати максимум від Вашого
@@ -151,6 +167,9 @@ const Contact = () => {
             >
               Подати заявку
             </button>
+            {isFormSubmitted && (
+              <Modal onClick={() => setIsFormSubmitted(false)} />
+            )}
           </div>
         </form>
       </div>

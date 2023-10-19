@@ -6,8 +6,8 @@ import About from "./pages/About";
 import Blogs from "./pages/Blogs";
 import ScrollToTop from "./components/UI/ScrollToTop";
 import BlogPage from "./pages/BlogPage";
-import Modal from "./components/UI/Modal";
 import Clients from "./pages/Clients";
+import QrCode from "./pages/QrCode";
 
 function App() {
   return (
@@ -20,10 +20,8 @@ function App() {
         <Route path="/blog" element={<Blogs />} />
         <Route path="/blogpage" element={<BlogPage />} />
         <Route path="/clients" element={<Clients />} />
+        <Route path="/qr" element={<QrCode />} />
         <Route path="*" element={<Home />} />
-      </Routes>
-      <Routes>
-        <Route path="/modal" element={<Modal />} />
       </Routes>
     </Fragment>
   );
