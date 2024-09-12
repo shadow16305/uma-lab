@@ -1,35 +1,38 @@
-import img from "../../../assets/image in blog.png";
-
-const BlogContent = () => {
-  return (
-    <div className="flex flex-col items-center md:items-start px-6 md:px-0 md:max-w-[684px] gap-6">
-      <p className="text-base font-medium">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-        minima provident cum dolor accusantium ut porro illum veritatis fugiat,
-        pariatur, numquam at. Maiores, tempora? Iure incidunt quae consequatur
-        in laboriosam!
-      </p>
-      <h2 className="text-[40px]">ГОЛОВНА ТЕМА ГОЛОВНА ТЕМА ГОЛОВНА ТЕМА???</h2>
-      <p className="text-base font-medium">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus
-        nihil obcaecati ratione tenetur sit atque cupiditate cumque nostrum,
-        voluptate expedita non. Obcaecati odio corrupti error fugit.
-        Exercitationem beatae non ex!
-      </p>
+const BlogContent = ({ blogData }) => {
+  return blogData.map((item) => (
+    <div
+      className="flex flex-col items-center md:items-start px-6 md:px-0 md:max-w-[600px] lg:max-w-[900px] gap-6 relative z-10"
+      key={item.id}
+    >
+      <p className="text-base font-medium">{item.text_section_1}</p>
+      {item.id === "1" && <img src={item.img_1} alt="img1" />}
+      <ul className="text-base font-medium flex flex-col gap-14">
+        {item.text_section_2.map((listItem, index) => (
+          <li key={index} className="flex flex-col gap-4">
+            <h1 className="text-3xl font-bold">{listItem.title}</h1>
+            <p>{listItem.content}</p>
+            {index === 5 && item.id === "2" && (
+              <img src={item.img_1} alt="img"></img>
+            )}
+            {index === 2 && item.id === "2" && (
+              <img src={item.img_0} alt="img"></img>
+            )}
+          </li>
+        ))}
+      </ul>
       <img
-        src={img}
+        src={item.img_2}
         className="max-w-[340px] md:max-w-[658px] max-h-[381px]"
         alt="Blog"
       />
-      <p className="text-base font-medium">
-        {" "}
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo vel
-        fugiat dolor pariatur iste, et illo expedita, quaerat ipsam ea voluptate
-        obcaecati architecto mollitia recusandae perferendis tempora distinctio
-        explicabo. Facilis!
+      <p className="text-base font-medium flex flex-col gap-4">
+        <span className={`${item.id === "2" && "text-3xl font-bold"}`}>
+          {item.text_section_3[0]}
+        </span>
+        {item.id === "2" && item.text_section_3[1]}
       </p>
     </div>
-  );
+  ));
 };
 
 export default BlogContent;

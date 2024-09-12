@@ -7,22 +7,21 @@ const Footer = () => {
     <footer className="w-full border-t bg-[#1a1a1a]">
       <div
         className="flex bg-[#1a1a1a] justify-center flex-col md:flex-row md:gap-x-48 mx-auto w-11/12 py-10 pb-20 md:pb-10 gap-y-12 md:gap-y-0 relative z-10 md:z-0"
-        id="footer"
-      >
+        id="footer">
         <div className="md:w-1/2">
-          <h1 className="sm:text-4xl text-3xl md:text-6xl font-semibold text-center md:text-start self-center text-stroke md:ml-5">
+          <h1 className="self-center text-3xl font-semibold text-center sm:text-4xl md:text-6xl md:text-start text-stroke md:ml-5">
             наші контакти
           </h1>
         </div>
 
-        <div className="self-center flex flex-row gap-y-40 text-center md:text-left text-white">
-          <div className="text-lg font-semibold flex flex-row gap-y-3 gap-x-7">
+        <div className="flex flex-row self-center text-center text-white gap-y-40 md:text-left">
+          <div className="flex flex-row text-lg font-semibold gap-y-3 gap-x-7">
             <div className="">
               <p>+38 096 689 66 16</p>
               <p>info@uma-lub.com</p>
             </div>
 
-            <div className="flex gap-x-2 justify-end md:justify-normal items-center">
+            {/* <div className="flex items-center justify-end gap-x-2 md:justify-normal">
               <a
                 target="_blank"
                 rel="noreferrer"
@@ -36,7 +35,6 @@ const Footer = () => {
                   className="invert just"
                 />
               </a>
-
               <a
                 target="_blank"
                 rel="noreferrer"
@@ -53,7 +51,7 @@ const Footer = () => {
               <a target="_blank" rel="noreferrer" href="https://t.me/UMAlab">
                 <img src={telegram_icon} width={30} height={30} alt="logo" />
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

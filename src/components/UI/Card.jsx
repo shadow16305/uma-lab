@@ -1,60 +1,48 @@
-import { useState } from "react";
-import { Waypoint } from "react-waypoint";
+import { motion } from "framer-motion";
 
 const Card = (props) => {
-  const [onScreen, setOnScreen] = useState(false);
-
-  const getOpactity = () => {
-    return onScreen ? "opacity-100" : "opacity-0";
-  };
-
-  const getPositionRight = () => {
-    return onScreen ? "md:right-0" : "md:-right-[300px]";
-  };
-
-  const getPositionLeft = () => {
-    return onScreen ? "left-10" : "-left-[300px]";
-  };
-
   return (
-    <Waypoint onEnter={() => setOnScreen(true)}>
-      <div className="flex flex-col md:flex-row justify-center gap-20 md:gap-32 relative px-10">
-        <div className="w-[361px]">
-          <div
-            className={`overflow-hidden transition-all duration-700 relative ${getPositionLeft()} ${getOpactity()}`}
-          >
-            <img
-              src={props.image}
-              alt="Portrait"
-              className="w-full h-full object-cover"
-            />
-          </div>
-        </div>
-        <h1 className="text-white text-[44px] md:text-[110px] font-medium tracking-[7.425px] md:tracking-[18.15px] absolute max-w-[605px] left-0 bottom-16 md:-bottom-24 flex flex-col leading-none">
-          <span
-            className={`ps-16 md:ps-52 relative transition-all duration-1000 ${getPositionRight()} ${getOpactity()}`}
-          >
-            {props.name}
-          </span>
-          <span
-            className={`relative transition-all duration-1000 ${getPositionLeft()} ${getOpactity()}`}
-          >
-            {props.lastName}
-          </span>
-        </h1>
-        <div
-          className={`flex flex-col items-end ${getOpactity()} transition-all duration-1000`}
-        >
-          <p className="text-white text-[22px] tracking-[1.98px] font-normal max-w-[579px] mt-10 hidden md:block">
-            {props.text}
-          </p>
-
-          <p className="text-white md:mt-auto text-3xl md:text-2xl pe-10 md:pe-0">
-            {props.role}
-          </p>
-        </div>
+    <div className="relative flex flex-col justify-center gap-20 px-10 md:flex-row md:gap-32">
+      <div className="w-[361px]">
+        <motion.div
+          initial={{ x: -300, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className={`overflow-hidden relative`}>
+          <img src={props.image} alt="Portrait" className="object-cover w-full h-full" />
+        </motion.div>
       </div>
-    </Waypoint>
+      <h1 className="text-white text-[44px] md:text-[110px] font-medium tracking-[7.425px] md:tracking-[18.15px] absolute max-w-[605px] left-0 bottom-16 md:-bottom-24 lg:-bottom-32 flex flex-col leading-none">
+        <motion.span
+          initial={{ x: -300, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className={`ps-16 md:ps-52 relative`}>
+          {props.name}
+        </motion.span>
+        <motion.span
+          initial={{ x: 300, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className={`relative`}>
+          {props.lastName}
+        </motion.span>
+      </h1>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.3 }}
+        className={`flex flex-col items-end`}>
+        <p className="text-white text-[22px] tracking-[1.98px] font-normal max-w-[579px] mt-10 hidden md:block">
+          {props.text}
+        </p>
+        <p className="text-3xl text-white md:mt-auto md:text-2xl pe-10 md:pe-0">{props.role}</p>
+      </motion.div>
+    </div>
   );
 };
 

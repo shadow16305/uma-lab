@@ -19,8 +19,7 @@ const ChatBubble = (props) => {
   };
   return (
     <div
-      className={`flex flex-col gap-y-5 items-center absolute md:sticky bottom-10 md:bottom-16 left-[75%] sm:left-[85%] md:left-[92%] w-16 z-0 md:z-10 ${props.className}`}
-    >
+      className={`flex flex-col gap-y-5 items-center absolute md:sticky bottom-10 md:bottom-14 left-[75%] sm:left-[85%] md:left-[93%] w-16 z-0 md:z-10 pb-4 cursor-pointer ${props.className}`}>
       {showBubbles && (
         <>
           <motion.div
@@ -28,16 +27,9 @@ const ChatBubble = (props) => {
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0, opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="text-white bg-sky-600 hover:bg-sky-700 rounded-full p-4"
-          >
-            <a href="https://t.me/UMAlab">
-              <img
-                src={telegram}
-                width={35}
-                height={50}
-                alt="logo"
-                className="invert"
-              />
+            className="p-4 mb-4 text-white rounded-full bg-sky-600 hover:bg-sky-700">
+            <a href="https://t.me/UMAlab" target="_blank" rel="noreferrer">
+              <img src={telegram} width={35} height={50} alt="logo" className="invert" />
             </a>
           </motion.div>
         </>
@@ -47,9 +39,8 @@ const ChatBubble = (props) => {
         initial={{ scale: 1, opacity: 1 }}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
-        className="text-white bg-sky-500 hover:bg-sky-600 rounded-full p-4"
-        onClick={handleBubbleClick}
-      >
+        className="p-4 text-white rounded-full bg-sky-500 hover:bg-sky-600"
+        onClick={handleBubbleClick}>
         <img
           src={bubbleImage}
           width={`${bubbleImage === chatBubble ? 37 : 35}`}

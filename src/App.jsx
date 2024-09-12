@@ -1,28 +1,32 @@
 import { Fragment } from "react";
-import { Routes, Route } from "react-router-dom";
-import Navbar from "./components/Layout/Navbar";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Root from "./pages/Root";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Blogs from "./pages/Blogs";
-import ScrollToTop from "./components/UI/ScrollToTop";
 import BlogPage from "./pages/BlogPage";
 import Clients from "./pages/Clients";
 import QrCode from "./pages/QrCode";
 
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Root />,
+    children: [
+      { path: "/", element: <Home /> },
+      { path: "/about", element: <About /> },
+      { path: "/blog", element: <Blogs /> },
+      { path: "/blogpage/:id", element: <BlogPage /> },
+      { path: "/clients", element: <Clients /> },
+      { path: "/qr", element: <QrCode /> },
+    ],
+  },
+]);
+
 function App() {
   return (
     <Fragment>
-      <Navbar />
-      <ScrollToTop />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/blog" element={<Blogs />} />
-        <Route path="/blogpage" element={<BlogPage />} />
-        <Route path="/clients" element={<Clients />} />
-        <Route path="/qr" element={<QrCode />} />
-        <Route path="*" element={<Home />} />
-      </Routes>
+      <RouterProvider router={router} />;
     </Fragment>
   );
 }

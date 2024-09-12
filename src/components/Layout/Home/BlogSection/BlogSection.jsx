@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { useInView, motion } from "framer-motion";
 
 import BlogCard from "../../../UI/BlogCard";
-import { blogSectionItems } from "../../../Tools/item-database";
+import { blogPageItems } from "../../../Tools/item-database";
 
 const BlogSection = () => {
   const ref = useRef(null);
@@ -29,10 +29,11 @@ const BlogSection = () => {
             ВСІ СТАТТІ
           </Link>
         </div>
-        <div className="flex flex-col md:flex-row gap-4">
-          {blogSectionItems.map((item) => (
+        <div className="flex flex-col md:flex-row gap-20">
+          {blogPageItems.map((item) => (
             <BlogCard
               key={item.id}
+              id={item.id}
               date={item.date}
               img={item.img}
               text={item.text}

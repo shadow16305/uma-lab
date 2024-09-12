@@ -3,7 +3,7 @@ import Offers from "../components/Layout/Home/Offers/Offers";
 import Reasons from "../components/Layout/Home/Reasons/Reasons";
 import Contact from "../components/Layout/Contact";
 import ChatBubble from "../components/UI/ChatBubble";
-import BlogSection from "../components/Layout/Home/BlogSection/BlogSection";
+// import BlogSection from "../components/Layout/Home/BlogSection/BlogSection";
 import Footer from "../components/Layout/Footer";
 
 const Home = () => {
@@ -12,7 +12,7 @@ const Home = () => {
       <Hero />
       <Offers />
       <Reasons />
-      <BlogSection />
+      {/* <BlogSection /> */}
       <ChatBubble className="md:hidden" />
       <Contact />
       <ChatBubble className="hidden md:block" />

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 
 import Typewriter from "typewriter-effect/dist/core";
 import hero_img from "../../../../assets/umalogo.png";

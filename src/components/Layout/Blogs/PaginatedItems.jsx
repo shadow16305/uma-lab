@@ -5,7 +5,6 @@ import { blogPageItems } from "../../Tools/item-database";
 import BlogCard from "../../UI/BlogCard";
 import arrow from "../../../assets/arrow-point-to-right.png";
 
-// Example items, to simulate fetching from other resources.
 const items = blogPageItems;
 
 function Items({ currentItems }) {
@@ -15,6 +14,7 @@ function Items({ currentItems }) {
         currentItems.map((item) => (
           <BlogCard
             key={item.id}
+            id={item.id}
             date={item.date}
             img={item.img}
             text={item.text}
@@ -25,20 +25,14 @@ function Items({ currentItems }) {
 }
 
 export default function PaginatedItems({ itemsPerPage }) {
-  // Here we use item offsets; we could also use page offsets
-  // following the API or data you're working with.
   const [itemOffset, setItemOffset] = useState(0);
 
-  // Simulate fetching items from other resources.
-  // (This could be items from props; or items loaded in a local state
-  // from an API endpoint with useEffect and useState)
   itemsPerPage = Math.max(1, Math.floor(itemsPerPage));
   const endOffset = itemOffset + itemsPerPage;
   console.log(`Loading items from ${itemOffset} to ${endOffset}`);
   const currentItems = items.slice(itemOffset, endOffset);
   const pageCount = Math.ceil(items.length / itemsPerPage);
 
-  // Invoke when the user clicks to request another page.
   const handlePageClick = (event) => {
     const newOffset = (event.selected * itemsPerPage) % items.length;
     console.log(
