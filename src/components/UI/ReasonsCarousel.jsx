@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import { useSpringCarousel } from "react-spring-carousel";
-import { reasonsItems } from "../Tools/item-database";
+import { reasonsItems } from "../../constants/content";
 
 const ReasonsCarousel = () => {
   const [activeItem, setActiveItem] = useState(0);
@@ -10,18 +10,11 @@ const ReasonsCarousel = () => {
     items: reasonsItems.map((item) => ({
       id: item.id,
       renderItem: (
-        <div
-          className="flex flex-col items-center gap-6 text-center"
-          key={item.id}
-        >
+        <div className="flex flex-col items-center gap-6 text-center" key={item.id}>
           <div className="h-[105px] w-[105]">
-            <img
-              src={item.img}
-              className="h-full object-contain"
-              alt="Reasons Icons"
-            />
+            <img src={item.img} className="object-contain h-full" alt="Reasons Icons" />
           </div>
-          <h2 className="text-white font-bold">{item.title}</h2>
+          <h2 className="font-bold text-white">{item.title}</h2>
           <p>{item.paragraph}</p>
         </div>
       ),
@@ -35,11 +28,9 @@ const ReasonsCarousel = () => {
   });
 
   return (
-    <div className="container mx-auto flex flex-col items-center md:hidden">
-      <div className="relative overflow-hidden max-w-[320px]">
-        {carouselFragment}
-      </div>
-      <div className="font-bold pt-10">
+    <div className="container flex flex-col items-center mx-auto md:hidden">
+      <div className="relative overflow-hidden max-w-[320px]">{carouselFragment}</div>
+      <div className="pt-10 font-bold">
         {activeItem + 1} / {reasonsItems.length}
       </div>
     </div>

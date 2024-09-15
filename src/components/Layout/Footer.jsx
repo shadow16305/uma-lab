@@ -1,6 +1,6 @@
-import facebook_icon from "../../assets/facebook-icon.svg";
-import instagram_icon from "../../assets/instagram-icon.svg";
-import telegram_icon from "../../assets/tegram_icon.svg";
+// import facebook_icon from "../../assets/facebook-icon.svg";
+// import instagram_icon from "../../assets/instagram-icon.svg";
+// import telegram_icon from "../../assets/tegram_icon.svg";
 
 const Footer = () => {
   return (
@@ -18,7 +18,7 @@ const Footer = () => {
           <div className="flex flex-row text-lg font-semibold gap-y-3 gap-x-7">
             <div className="">
               <p>+38 096 689 66 16</p>
-              <p>info@uma-lub.com</p>
+              <p>umalabua@gmail.com</p>
             </div>
 
             {/* <div className="flex items-center justify-end gap-x-2 md:justify-normal">

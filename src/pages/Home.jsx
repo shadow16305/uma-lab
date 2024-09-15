@@ -1,14 +1,14 @@
-import Hero from "../components/Layout/Home/Hero/Hero";
-import Offers from "../components/Layout/Home/Offers/Offers";
-import Reasons from "../components/Layout/Home/Reasons/Reasons";
+import Hero from "../components/Home/Hero";
+import Offers from "../components/Home/Offers";
+import Reasons from "../components/Home/Reasons";
 import Contact from "../components/Layout/Contact";
 import ChatBubble from "../components/UI/ChatBubble";
-// import BlogSection from "../components/Layout/Home/BlogSection/BlogSection";
+// import BlogSection from "../components/Home/BlogSection/BlogSection";
 import Footer from "../components/Layout/Footer";
 
 const Home = () => {
   return (
-    <div className="bg-[#1a1a1a] h-screen overflow-auto">
+    <>
       <Hero />
       <Offers />
       <Reasons />
@@ -17,7 +17,7 @@ const Home = () => {
       <Contact />
       <ChatBubble className="hidden md:block" />
       <Footer />
-    </div>
+    </>
   );
 };
 

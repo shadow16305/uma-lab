@@ -1,8 +1,8 @@
 import { useRef } from "react";
-import ReasonsGrid from "../../../UI/ReasonsGrid";
+import ReasonsGrid from "../UI/ReasonsGrid";
 import { useInView, motion } from "framer-motion";
-import { reasonsItems } from "../../../Tools/item-database";
-import ReasonsCarousel from "../../../UI/ReasonsCarousel";
+import { reasonsItems } from "../../constants/content";
+import ReasonsCarousel from "../UI/ReasonsCarousel";
 
 function Reasons() {
   const ref = useRef(null);
@@ -10,9 +10,7 @@ function Reasons() {
 
   return (
     <div className="flex flex-col gap-y-8 bg-[#1a1a1a] text-white mt-44">
-      <h1 className="text-center font-bold text-4xl md:text-5xl py-10">
-        Цифровий успіх з UMA
-      </h1>
+      <h1 className="py-10 text-4xl font-bold text-center md:text-5xl">Цифровий успіх з UMA</h1>
       <ReasonsCarousel />
       <ReasonsGrid>
         {reasonsItems.map((item) => (
@@ -20,18 +18,13 @@ function Reasons() {
             initial={{ opacity: 0 }}
             animate={inView ? { opacity: 1 } : { opacity: 0 }}
             transition={{ duration: 1 }}
-            key={item.id}
-          >
-            <div className="flex-col gap-y-2 items-center text-center hidden md:flex">
+            key={item.id}>
+            <div className="flex-col items-center hidden text-center gap-y-2 md:flex">
               <div className="h-[105px] w-[105] flex justify-center items-center">
-                <img
-                  src={item.img}
-                  alt="logo"
-                  className="mt-[-26px] py-2 h-full object-contain"
-                />
+                <img src={item.img} alt="logo" className="mt-[-26px] py-2 h-full object-contain" />
               </div>
               <div className="xl:line-clamp-2 md:w-3/4">
-                <h3 className="font-semibold text-lg">{item.title}</h3>
+                <h3 className="text-lg font-semibold">{item.title}</h3>
               </div>
               <p ref={ref} className="text-base text-gray-400">
                 {item.paragraph}

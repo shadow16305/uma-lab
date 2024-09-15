@@ -2,7 +2,7 @@ import { useState } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import { AnimatePresence, motion } from "framer-motion";
 
-import { navLinks } from "../Tools/item-database";
+import { navLinks } from "../../constants/content";
 
 import logo from "../../assets/umalogo.png";
 
@@ -12,7 +12,7 @@ function Navbar() {
   const genericHamburgerLine = `h-1 w-8 my-1 bg-white transition ease transform duration-300`;
 
   return (
-    <div>
+    <>
       <div
         className={`flex justify-between items-center w-screen px-6 md:px-10 py-2 fixed top-0 z-30 ${
           isOpen ? "bg-none" : "bg-[#1a1a1a]"
@@ -37,7 +37,7 @@ function Navbar() {
             animate={{ height: "100vh" }}
             exit={{ height: 0 }}
             transition={{ duration: 0.6 }}
-            className={`fixed bg-[url('/src/assets/darker01.png')] bg-[#1a1a1a] z-20 h-screen w-screen flex items-center justify-center lg:justify-start origin-top`}>
+            className={`fixed top-0 bg-[url('/src/assets/darker01.png')] bg-[#1a1a1a] z-20 h-screen w-screen flex items-center justify-center lg:justify-start origin-top`}>
             <ul className="list-none uppercase gap-8 md:gap-x-20 lg:gap-16 flex flex-col md:flex-row md:flex-wrap items-center justify-center lg:items-start lg:justify-start lg:ps-10 md:mx-auto lg:max-w-[1200px] h-full lg:h-[479px]">
               {navLinks.map((item, index) => (
                 <motion.li
@@ -72,7 +72,7 @@ function Navbar() {
           </motion.div>
         )}
       </AnimatePresence>
-    </div>
+    </>
   );
 }
 

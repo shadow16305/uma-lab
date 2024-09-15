@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 
 import ReactPaginate from "react-paginate";
-import { blogPageItems } from "../../Tools/item-database";
-import BlogCard from "../../UI/BlogCard";
-import arrow from "../../../assets/arrow-point-to-right.png";
+import { blogPageItems } from "../../constants/content";
+import BlogCard from "../UI/BlogCard";
+import arrow from "../../assets/arrow-point-to-right.png";
 
 const items = blogPageItems;
 
@@ -12,13 +12,7 @@ function Items({ currentItems }) {
     <>
       {currentItems &&
         currentItems.map((item) => (
-          <BlogCard
-            key={item.id}
-            id={item.id}
-            date={item.date}
-            img={item.img}
-            text={item.text}
-          />
+          <BlogCard key={item.id} id={item.id} date={item.date} img={item.img} text={item.text} />
         ))}
     </>
   );
@@ -35,9 +29,7 @@ export default function PaginatedItems({ itemsPerPage }) {
 
   const handlePageClick = (event) => {
     const newOffset = (event.selected * itemsPerPage) % items.length;
-    console.log(
-      `User requested page number ${event.selected}, which is offset ${newOffset}`
-    );
+    console.log(`User requested page number ${event.selected}, which is offset ${newOffset}`);
     setItemOffset(newOffset);
   };
 
@@ -49,15 +41,7 @@ export default function PaginatedItems({ itemsPerPage }) {
         </div>
         <ReactPaginate
           breakLabel="..."
-          nextLabel={
-            <img
-              src={arrow}
-              alt="next"
-              width={20}
-              height={20}
-              className="invert"
-            />
-          }
+          nextLabel={<img src={arrow} alt="next" width={20} height={20} className="invert" />}
           previousLabel=""
           onPageChange={handlePageClick}
           pageRangeDisplayed={5}

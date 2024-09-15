@@ -1,4 +1,3 @@
-import { Fragment } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Root from "./pages/Root";
 import Home from "./pages/Home";
@@ -24,11 +23,7 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  return (
-    <Fragment>
-      <RouterProvider router={router} />;
-    </Fragment>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;

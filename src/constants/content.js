@@ -2,16 +2,20 @@ import { icons } from "./main-page-images";
 import { images } from "./about-page-images";
 import { mobile_images } from "./about-page-images";
 
-import blog_one_bg from "../../assets/blog-1_main_img.jpg";
-import blog_one_second_img from "../../assets/blog-1_second_img.jpg";
-import blog_one_third_img from "../../assets/blog-1_third_img.jpg";
-import blog_two_bg from "../../assets/blog_two_thumb.webp";
-import blog_two_first_img from "../../assets/blog-2_main_img.webp";
-import blog_two_second_img from "../../assets/blog-2_second_img.webp";
-import blog_two_third_img from "../../assets/blog-2_third_img.webp";
+import blog_one_bg from "../assets/blog-1_main_img.jpg";
+import blog_one_second_img from "../assets/blog-1_second_img.jpg";
+import blog_one_third_img from "../assets/blog-1_third_img.jpg";
+import blog_two_bg from "../assets/blog_two_thumb.webp";
+import blog_two_first_img from "../assets/blog-2_main_img.webp";
+import blog_two_second_img from "../assets/blog-2_second_img.webp";
+import blog_two_third_img from "../assets/blog-2_third_img.webp";
 
-import blog_one_thumb from "../../assets/blog_thumb.png";
-import blog_two_thumb from "../../assets/blog_two_thumb.webp";
+import blog_one_thumb from "../assets/blog_thumb.png";
+import blog_two_thumb from "../assets/blog_two_thumb.webp";
+
+import robe from "../assets/robe.png";
+import diamonds from "../assets/diamonds.png";
+import diamonds_two from "../assets/diamonds_two.png";
 
 export const serviceItems = [
   {
@@ -184,7 +188,7 @@ export const teamItems = [
   {
     id: "person_two",
     img: images[1],
-    text: `Наш фотограф, режисер— це майстер візуалізації. Він не простознімає фотографії та відео, але й створює образи, які говорять, викликають емоції і залучають увагу.`,
+    text: `Наш фотограф, режисер — це майстер візуалізації. Він не просто знімає фотографії та відео, але й створює образи, які говорять, викликають емоції і залучають увагу.`,
     role: "Content creator ",
     name: "ANDRII",
     lastName: "KONONOV",
@@ -258,7 +262,7 @@ export const navLinks = [
   {
     id: "services",
     name: "ПОСЛУГИ",
-    link: "/#offer",
+    link: "/#offers",
     number: "02",
   },
   {
@@ -411,5 +415,32 @@ export const blogPageData = [
       "9. Контент",
       "Це схоже на будівництво вежі з блоків. Додавання нових блоків повільно і неухильно робить вежу вищою і міцнішою. Це допомагає сайту показуватися вище в результатах пошуку. Розміщення матеріалів на сайті так, щоб люди могли їх побачити і прочитати. Чому важливо мати SEO в словах на сторінках сайту? Наявність SEO в текстах на сторінках сайту - це як наявність спеціального коду, який допомагає сайту показуватися вище, коли люди шукають щось в інтернеті. Це як мати секретний інгредієнт, який робить сайт популярнішим і легшим для пошуку. Розкажіть людям, які відвідують сайт, про Вашу компанію, про те, що продаєте або робите, і чому з Вами добре працювати. Ключові слова - це слова, які допомагають пошуковим системам вирішити, чи відповідає ваш сайт тому, що хтось шукає. Щоб ваш сайт був корисним для людей, а також з'являвся в результатах пошуку, вам потрібно природно використовувати ключові слова у своїх текстах. Це може бути складно, оскільки ви хочете використати багато ключових слів, але при цьому зробити текст зрозумілим. Утримувати  сайт на вершині результатів пошуку важко, тому що постійно створюються нові веб-сайти, а пошукові системи змінюють свої підходи до визначення того, які сайти показувати першими. Це все одно, що намагатися влучити в рухому мішень. Якщо ви використовуєте лише старі методи, Ваш сайт може бути на вершині одного дня, але наступного дня опуститися вниз. Щоб переконатися, що люди можуть легко знайти Ваш сайт, важливо регулярно займатися SEO-просуванням сайту з перевіреною SEO-студією. Ці фахівці стежать за тим, як працюють пошукові системи, і вносять зміни на сайт, щоб він залишався на вершині результатів пошуку.",
     ],
+  },
+];
+
+export const clients = [
+  {
+    name: "BOVA",
+    description: "Створення фотоконтенту для дизайнерської лінійки халатів ручної роботи",
+    type: "Створення фотоконтенту",
+    desktop_img: robe,
+    mobile_img: null,
+    background: "bg-[#4F7769]",
+    h2_color: "text-[#4F7769]",
+    text_color: "text-white",
+    stroke: "text-stroke",
+    border_color: "border-white",
+  },
+  {
+    name: "Gemrays",
+    description: "Створення фото та колажів для ювелірно-біжутерної компанії",
+    type: "Створення фотоконтенту",
+    desktop_img: diamonds,
+    mobile_img: diamonds_two,
+    background: "bg-[#c2cdd3]",
+    h2_color: "text-[#c2cdd3]",
+    text_color: "text-black",
+    stroke: "text-stroke-dark",
+    border_color: "border-black",
   },
 ];

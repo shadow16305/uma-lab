@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 import { useInView, motion } from "framer-motion";
 
-import BlogCard from "../../../UI/BlogCard";
-import { blogPageItems } from "../../../Tools/item-database";
+import BlogCard from "../UI/BlogCard";
+import { blogPageItems } from "../../constants/content";
 
 const BlogSection = () => {
   const ref = useRef(null);
@@ -14,30 +14,17 @@ const BlogSection = () => {
     <motion.div
       initial={{ opacity: 0 }}
       animate={inView ? { opacity: 1 } : { opacity: 0 }}
-      transition={{ duration: 1 }}
-    >
-      <div
-        className="container mx-auto flex flex-col items-center justify-center gap-28 my-44"
-        ref={ref}
-      >
+      transition={{ duration: 1 }}>
+      <div className="container flex flex-col items-center justify-center mx-auto gap-28 my-44" ref={ref}>
         <div className="flex flex-col md:flex-row justify-between items-center w-full md:px-[224px]">
           <h1 className="text-white font-bold text-[56px]">Блог</h1>
-          <Link
-            to="/blog"
-            className="underline text-white font-bold text-base hover:opacity-50 transition-[0.25s]"
-          >
+          <Link to="/blog" className="underline text-white font-bold text-base hover:opacity-50 transition-[0.25s]">
             ВСІ СТАТТІ
           </Link>
         </div>
-        <div className="flex flex-col md:flex-row gap-20">
+        <div className="flex flex-col gap-20 md:flex-row">
           {blogPageItems.map((item) => (
-            <BlogCard
-              key={item.id}
-              id={item.id}
-              date={item.date}
-              img={item.img}
-              text={item.text}
-            />
+            <BlogCard key={item.id} id={item.id} date={item.date} img={item.img} text={item.text} />
           ))}
         </div>
       </div>

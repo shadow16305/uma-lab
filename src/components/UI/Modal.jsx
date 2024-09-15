@@ -1,7 +1,7 @@
 import cross_icon from "../../assets/cross_modal_icon.svg";
 import check_icon from "../../assets/modal_icon.svg";
-import facebook_icon from "../../assets/facebook-icon.svg";
-import instagram_icon from "../../assets/instagram-icon.svg";
+// import facebook_icon from "../../assets/facebook-icon.svg";
+// import instagram_icon from "../../assets/instagram-icon.svg";
 import telegram_icon from "../../assets/tegram_icon.svg";
 
 const Modal = (props) => {

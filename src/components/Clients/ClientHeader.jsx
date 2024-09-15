@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import { Waypoint } from "react-waypoint";
 
-import blob from "../../../../assets/blob.png";
+import blob from "../../assets/blob.png";
 
 const ClientHeader = () => {
   const [onScreen, setOnScreen] = useState(false);
@@ -14,16 +14,10 @@ const ClientHeader = () => {
   return (
     <Waypoint onEnter={() => setOnScreen(true)}>
       <div className="md:bg-[url('/src/assets/Clients.png')] bg-contain md:bg-cover bg-no-repeat h-screen w-screen relative">
-        <img
-          src={blob}
-          className="md:hidden absolute right-0"
-          width={350}
-          alt="Blob"
-        />
-        <div className="container mx-auto flex items-center justify-center md:items-start h-full">
+        <img src={blob} className="absolute right-0 md:hidden" width={350} alt="Blob" />
+        <div className="container flex items-center justify-center h-full mx-auto md:items-start">
           <h1
-            className={`text-white text-7xl md:text-[215px] font-bold leading-tight pt-28 ps-5 ${getOpactity()} transition-all duration-[1.5s]`}
-          >
+            className={`text-white text-7xl md:text-[215px] font-bold leading-tight pt-28 ps-5 ${getOpactity()} transition-all duration-[1.5s]`}>
             НАШІ КЛІЄНТИ
           </h1>
         </div>
