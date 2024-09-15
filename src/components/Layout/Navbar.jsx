@@ -1,25 +1,35 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import { AnimatePresence, motion } from "framer-motion";
+import { ScrollContext } from "../../context/scroll-context";
 
 import { navLinks } from "../../constants/content";
 
 import logo from "../../assets/umalogo.png";
+import { useLocation } from "react-router-dom";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const scrollCtx = useContext(ScrollContext);
+  const location = useLocation();
 
-  const genericHamburgerLine = `h-1 w-8 my-1 bg-white transition ease transform duration-300`;
+  const genericHamburgerLine = `${
+    location.pathname === "/clients" ? (scrollCtx.scrolled ? "bg-black" : "bg-white") : "bg-white"
+  } h-1 w-8 my-1 transition ease transform duration-300`;
 
   return (
     <>
       <div
         className={`flex justify-between items-center w-screen px-6 md:px-10 py-2 fixed top-0 z-30 ${
-          isOpen ? "bg-none" : "bg-[#1a1a1a]"
+          isOpen ? "bg-none" : `${location.pathname === "/clients" && "bg-transparent"}`
         } `}>
         <h3>
           <Link smooth to="/#hero" onClick={() => setIsOpen(false)}>
-            <img src={logo} className="w-[45px] h-[30px]" alt="Uma Lab" />
+            <img
+              src={logo}
+              className={`${location.pathname === "/clients" && scrollCtx.scrolled && "invert"} w-[45px] h-[30px]`}
+              alt="Uma Lab"
+            />
           </Link>
         </h3>
         <button

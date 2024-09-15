@@ -13,9 +13,14 @@ import blog_two_third_img from "../assets/blog-2_third_img.webp";
 import blog_one_thumb from "../assets/blog_thumb.png";
 import blog_two_thumb from "../assets/blog_two_thumb.webp";
 
-import robe from "../assets/robe.png";
-import diamonds from "../assets/diamonds.png";
-import diamonds_two from "../assets/diamonds_two.png";
+import robe from "../assets/clients/robe.png";
+import diamonds from "../assets/clients/diamonds.png";
+import diamonds_two from "../assets/clients/diamonds_two.png";
+import green_life from "../assets/clients/green-life.png";
+import vermax from "../assets/clients/vermax.png";
+import autogearhub from "../assets/clients/autogearhub.png";
+import green_health from "../assets/clients/green-health.png";
+import bayview from "../assets/clients/bayview.png";
 
 export const serviceItems = [
   {
@@ -422,7 +427,17 @@ export const clients = [
   {
     name: "BOVA",
     description: "Створення фотоконтенту для дизайнерської лінійки халатів ручної роботи",
-    type: "Створення фотоконтенту",
+    tags: [
+      {
+        name: "Створення фотоконтенту",
+      },
+      {
+        name: null,
+      },
+      {
+        name: null,
+      },
+    ],
     desktop_img: robe,
     mobile_img: null,
     background: "bg-[#4F7769]",
@@ -430,11 +445,22 @@ export const clients = [
     text_color: "text-white",
     stroke: "text-stroke",
     border_color: "border-white",
+    imgClass: "scale-125",
   },
   {
     name: "Gemrays",
     description: "Створення фото та колажів для ювелірно-біжутерної компанії",
-    type: "Створення фотоконтенту",
+    tags: [
+      {
+        name: "Створення фотоконтенту",
+      },
+      {
+        name: null,
+      },
+      {
+        name: null,
+      },
+    ],
     desktop_img: diamonds,
     mobile_img: diamonds_two,
     background: "bg-[#c2cdd3]",
@@ -442,5 +468,121 @@ export const clients = [
     text_color: "text-black",
     stroke: "text-stroke-dark",
     border_color: "border-black",
+    imgClass: "-bottom-6",
+  },
+  {
+    name: "Green life",
+    description: "Редизайн,ствоерння фотоконтенту та проведення рекламної компанії для компанії забудовника ",
+    tags: [
+      {
+        name: "Редизайн",
+      },
+      {
+        name: "Медіаконтент",
+      },
+      {
+        name: "Реклама",
+      },
+    ],
+    desktop_img: green_life,
+    mobile_img: null,
+    background: "bg-[#BBD5BB]",
+    h2_color: "text-[#BBD5BB]",
+    text_color: "text-black",
+    stroke: "text-stroke-dark",
+    border_color: "border-black",
+    imgClass: "-bottom-6 2xl:scale-125",
+  },
+  {
+    name: "VerMax",
+    description: "Створення фотоконтенту та проведення рекламної компанії для стоматолоії",
+    tags: [
+      {
+        name: null,
+      },
+      {
+        name: "Медіаконтент",
+      },
+      {
+        name: "Реклама",
+      },
+    ],
+    desktop_img: vermax,
+    mobile_img: null,
+    background: "bg-[#DDDDDD]",
+    h2_color: "text-[#DDDDDD]",
+    text_color: "text-black",
+    stroke: "text-stroke-dark",
+    border_color: "border-black",
+    imgClass: "-bottom-14",
+  },
+  {
+    name: "AUTOGEARHUB",
+    description: "Cтворення веб-сайту, налаштування таргетованої реклами для інтернет магазину",
+    tags: [
+      {
+        name: "Редизайн",
+      },
+      {
+        name: "Веб-сайт",
+      },
+      {
+        name: null,
+      },
+    ],
+    desktop_img: autogearhub,
+    mobile_img: null,
+    background: "bg-[#6A696A]",
+    h2_color: "text-[#6A696A]",
+    text_color: "text-black",
+    stroke: "text-stroke-dark",
+    border_color: "border-black",
+    imgClass: "lg:-bottom-8 2xl:bottom-0 lg:scale-100 2xl:scale-125",
+  },
+  {
+    name: "GREEN Health",
+    description: "Створення дизайну лінійки флаконів та зйомка фотоконтенту для рекламної компанії",
+    tags: [
+      {
+        name: "Дизайн",
+      },
+      {
+        name: "Медіаконтент",
+      },
+      {
+        name: null,
+      },
+    ],
+    desktop_img: green_health,
+    mobile_img: null,
+    background: "bg-[#D4E8E2]",
+    h2_color: "text-[#D4E8E2]",
+    text_color: "text-black",
+    stroke: "text-stroke-dark",
+    border_color: "border-black",
+    imgClass: "lg:-bottom-6 2xl:bottom-8 2xl:scale-125",
+  },
+  {
+    name: "bayview Diagnostic Centre",
+    description: "Створення веб-сайту, налаштування таргетованої реклами для мережі діагностичних центрів",
+    tags: [
+      {
+        name: "Веб-сайт",
+      },
+      {
+        name: "Медіаконтент",
+      },
+      {
+        name: "Реклама",
+      },
+    ],
+    desktop_img: bayview,
+    mobile_img: null,
+    background: "bg-[#7898B7]",
+    h2_color: "text-[#7898B7]",
+    text_color: "text-black",
+    stroke: "text-stroke-dark",
+    border_color: "border-black",
+    imgClass: "lg:-bottom-6 2xl:scale-125",
   },
 ];
