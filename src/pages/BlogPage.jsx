@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 
-import BlogPageHeader from "../components/Layout/Blogs/BlogPageHeader";
-import BlogContent from "../components/Layout/Blogs/BlogContent";
+import BlogPageHeader from "../components/Blogs/BlogPageHeader";
+import BlogContent from "../components/Blogs/BlogContent";
 import Footer from "../components/Layout/Footer";
 import { blogPageData } from "../constants/content";
 import { FaArrowLeftLong } from "react-icons/fa6";
