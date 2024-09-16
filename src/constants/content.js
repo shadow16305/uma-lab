@@ -14,6 +14,7 @@ import blog_one_thumb from "../assets/blog_thumb.png";
 import blog_two_thumb from "../assets/blog_two_thumb.webp";
 
 import robe from "../assets/clients/robe.png";
+import robe_mobile from "../assets/clients/robe-mobile.png";
 import diamonds from "../assets/clients/diamonds.png";
 import diamonds_two from "../assets/clients/diamonds_two.png";
 import green_life from "../assets/clients/green-life.png";
@@ -429,7 +430,7 @@ export const clients = [
     description: "Створення фотоконтенту для дизайнерської лінійки халатів ручної роботи",
     tags: [
       {
-        name: "Створення фотоконтенту",
+        name: "Медіаконтент",
       },
       {
         name: null,
@@ -439,7 +440,7 @@ export const clients = [
       },
     ],
     desktop_img: robe,
-    mobile_img: null,
+    mobile_img: robe_mobile,
     background: "bg-[#4F7769]",
     h2_color: "text-[#4F7769]",
     text_color: "text-white",
@@ -452,7 +453,7 @@ export const clients = [
     description: "Створення фото та колажів для ювелірно-біжутерної компанії",
     tags: [
       {
-        name: "Створення фотоконтенту",
+        name: "Медіаконтент",
       },
       {
         name: null,

@@ -14,20 +14,26 @@ function Navbar() {
   const location = useLocation();
 
   const genericHamburgerLine = `${
-    location.pathname === "/clients" ? (scrollCtx.scrolled ? "bg-black" : "bg-white") : "bg-white"
+    location.pathname === "/clients"
+      ? scrollCtx.scrolled && !isOpen
+        ? "md:bg-black bg-white"
+        : "bg-white"
+      : "bg-white"
   } h-1 w-8 my-1 transition ease transform duration-300`;
 
   return (
     <>
       <div
         className={`flex justify-between items-center w-screen px-6 md:px-10 py-2 fixed top-0 z-30 ${
-          isOpen ? "bg-none" : `${location.pathname === "/clients" && "bg-transparent"}`
+          isOpen ? "bg-none" : `${location.pathname === "/clients" ? "bg-[#1a1a1a] md:bg-transparent" : "bg-[#1a1a1a]"}`
         } `}>
         <h3>
           <Link smooth to="/#hero" onClick={() => setIsOpen(false)}>
             <img
               src={logo}
-              className={`${location.pathname === "/clients" && scrollCtx.scrolled && "invert"} w-[45px] h-[30px]`}
+              className={`${
+                location.pathname === "/clients" && scrollCtx.scrolled && !isOpen && "md:invert"
+              } w-[45px] h-[30px]`}
               alt="Uma Lab"
             />
           </Link>
